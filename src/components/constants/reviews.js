@@ -2,14 +2,14 @@ import texts from "./texts";
 
 const clientReviews = [
   {
-    name: 'Mutunga Katola', description: 'Buruburu', key: "1",
+    name: 'Mutunga Katola', description: 'Buruburu', key: "1", url: 'mkatola@associate.crcna.org',
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
       size: "2", mobileSize: "1"
     }, comment: 'I’m grateful for the good tutoring work you are doing. (Parent)'
   },
   {
-    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "2",
+    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "2",  url: 'https://www.facebook.com/mutai.sharo',
     stars: {
       shade:[texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise],
       size: "2", mobileSize: "1"
@@ -19,7 +19,7 @@ const clientReviews = [
         ' company for their work.\n'
   },
   {
-    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "3",
+    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "3", url: 'https://twitter.com/OkelloOnuko',
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.turquoise, texts.grey],
       size: "2", mobileSize: "1"
@@ -27,7 +27,7 @@ const clientReviews = [
         ' resources and teaching services are provided to learners at the comfort of their homes'
   },
   {
-    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "4",
+    name: 'John Mwendwa', description: 'Kahawa Wendani', key: "4", url: 'https://www.facebook.com/john.mwendwa.33',
     stars: {
       shade: [texts.turquoise, texts.turquoise, texts.turquoise, texts.grey, texts.grey],
       size: "2", mobileSize: "1"

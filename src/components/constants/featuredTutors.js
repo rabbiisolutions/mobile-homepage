@@ -11,7 +11,7 @@ const featuredTutors = [
         ' mentor my students .I am strongly attached to my students and that gives me a chance to' +
         ' deliver to the maximum.\n I have taught for two years in various schools in Nairobi,' +
         ' which includes St.Annes Girls and Nairobi School.\n',
-    areas: 'Secondary Mathematics and Physics'
+    areas: 'Secondary Mathematics and Physics', url: 'https://www.facebook.com/mutai.sharo',
   },
   {
     name: 'Mr. Calvins Okello', description: '6 years of experience, National Examiner, IT' +
@@ -22,7 +22,7 @@ const featuredTutors = [
         ' in integration of technology into teaching and learning. I am a trained Kenya National ' +
         'Examiner for physics paper with wealth of experience in Student assessment and learning' +
         ' experience of over 6 years\n',
-    areas: 'Physics, Mathematics '
+    areas: 'Physics, Mathematics ', url: 'https://twitter.com/OkelloOnuko',
   },
   {
     name: 'Brian Chege', description: 'Sofapaka FC coach', key: "3",
