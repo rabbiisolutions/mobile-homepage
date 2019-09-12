@@ -1,0 +1,691 @@
+$colors: (
+        aqua: #01FEFE, white: #FFFF, eggBlue: #01BBBB, electricViolet: #B200CD, electricVioletDull: #B412CD,
+        magenta: #DC00FE, mirage: #1B2531, dullMirage: rgba(27, 37, 49, 0.8), scorpion: #625E5D,
+        bluewood: #263246, vividViolet: #9F34AF, purple: #740186, grey: #CBC6C6, darkGrey: #A8A8A8,
+        bondiBlue: #00AEAE, blueStone: #006A6A, clairvoyant: #36043E, ripePlum: #5B0069,
+        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3
+);
+
+@function color($name) {
+  @return map_get($colors, $name);
+}
+
+$webkitRadius : 10em;
+$borderRadius: 10em;
+$pointer: pointer;
+$font24: 1em;
+$lightMask: rgba(37, 37, 37, 0.44);
+$strongMask: rgba(3, 3, 3, 0.79);
+$navBarHeight: 4.25em;
+$font18: 1.125em;
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: inherit;
+    width: 100%;
+
+    .nav-bar {
+      background-color: color(mirage);
+      height: $navBarHeight;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+
+      .logo {;
+          cursor: $pointer;
+      }
+
+      button {
+          -webkit-border-radius: $webkitRadius;
+          border-radius: $borderRadius;
+          background-color: inherit;
+          color: color(aqua);
+          border: 0.2em solid color(aqua);
+          padding: .5em 2em;
+          cursor: $pointer;
+          font-size: $font24;
+      }
+
+      .toggle span{
+          fill: color(aqua);
+          cursor: $pointer;
+      }
+  }
+
+    .landing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: $navBarHeight;
+        padding: 10px 0;
+
+        .teecha-caption {
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0 16px 0;
+            padding: 5px;
+            font-size: $font18;
+            font-weight: bold;
+            text-shadow: 0 4px 20px #000000;
+
+            .teecha {
+                color: color(aqua);
+                margin-bottom: 8px;
+            }
+
+            .home-tuition {
+                color: color(eggBlue);
+            }
+        }
+
+        .slogan {
+          background: $lightMask;
+          height: 2.125em;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          margin-top: 16px;
+          padding: 0 10px;
+          border-radius: 5px;
+
+          .idea span {
+            fill: color(white);
+          }
+
+          .text {
+                margin-left: 10px;
+                color: color(white);
+                font-size: 1.125em;
+                font-weight: bold;
+          }
+      }
+
+        .teecha-areas {
+          background: $strongMask;
+          width: 91%;
+          font-weight: bold;
+          padding: 16px 0;
+          display: inherit;
+          flex-direction: inherit;
+          justify-content: center;
+          align-items: inherit;
+          border-radius: 5px;
+
+          .home-tuition-areas-title {
+              color: color(vividViolet);
+              text-align: center;
+              font-size: 1.25em;
+              margin-bottom: 14px;
+          }
+
+          .home-tuition-areas {
+              display: inherit;
+              flex-direction: inherit;
+              justify-content: inherit;
+              align-items: inherit;
+              width: 81%;
+
+              .teecha-collapse {
+                  width: 100%;
+
+                  .section-toggle {
+                      width: inherit;
+                      border-top: 2px solid color(purple);
+                      color: color(magenta);
+                      padding: 5px 10px;
+                      font-size: .85rem;
+                      display: flex;
+                      align-items: center;
+                      justify-content: space-between;
+                  }
+
+                  .section-toggle.shown {
+                      color: color(aqua);
+
+                      .up span {
+                          fill: color(aqua);
+                      }
+                  }
+
+                  .section-toggle:hover {
+                      color: color(aqua);
+                  }
+              }
+
+              .down span, .up span {
+                  fill: color(magenta);
+              }
+
+              .panel li {
+                  color: color(aqua);
+                  font-size: .85rem;
+              }
+
+          }
+
+          .home-tuition-info {
+              color: color(grey);
+              text-align: center;
+              font-size: .8em;
+              margin-top: 14px;
+          }
+
+      }
+
+  }
+
+    .landing-webp, .landing-jpeg, .how-to-jpeg, .how-to-webp, .reviews-jpeg, .reviews-webp, .trending-webp, .trending-jpeg {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .landing-webp {
+        background-image: url("../images/mobile/webp/landing.webp");
+    }
+
+    .landing-jpeg {
+        background-image: url("../images/mobile/jpeg/landing.jpg");
+    }
+
+    .panel {
+        display: none;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+    .how-to-filter, .reviews-filter {
+        margin: 5px 0;
+        padding: 1px 5px;
+    }
+
+    .how-to-filter {
+        background: rgba(0, 0, 0, 0.25);
+        font-weight: bold;
+    }
+
+    .reviews-filter {
+        background: rgba(179, 189, 204, 0.74);
+    }
+
+    .how-teecha-works {
+        background-color: color(white);
+
+        .step {
+            border: 1px solid #E5E5E5;
+        }
+    }
+
+    .featured-bg {
+        background: linear-gradient(180deg, rgba(0, 182, 194, 0.13) 0%, rgba(0, 0, 0, 0.13) 100%)
+    }
+
+    .how-to-jpeg {
+        background-image: url("../images/mobile/jpeg/registration.jpg");
+    }
+
+    .how-to-webp {
+        background-image: url("../images/mobile/webp/registration.webp");
+    }
+
+    .reviews-jpeg {
+        background-image: url("../images/mobile/jpeg/reviews.jpg");
+    }
+
+    .reviews-webp {
+        background-image: url("../images/mobile/webp/reviews.webp");
+    }
+
+    .trending-jpeg {
+        background-image: url("../images/mobile/jpeg/trending.jpg");
+    }
+
+    .trending-webp {
+        background-image: url("../images/mobile/webp/trending.webp");
+    }
+
+    .section-toggle {
+        cursor: $pointer;
+    }
+
+    .sections {
+          background: linear-gradient(161.25deg, rgba(157, 162, 170, 0.2) 7.23%, rgba(75, 84, 98, 0.2) 90.59%);
+          padding: 15px 0;
+
+          #sections-title {
+              color: color(mirage);
+              font-size: 2.25em;
+              text-align: center;
+          }
+
+          #sections-lead {
+              color: color(dullMirage);
+              font-size: 1em;
+              text-align: center;
+              margin-bottom: 20px;
+          }
+
+          .sections-accordion {
+              color: color(white);
+              font-size: 1.25em;
+              padding: 5px 10px;
+
+              .section-toggle {
+                  background: color(scorpion);
+                  width: 100%;
+                  padding: 10px 15px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  border-radius: 5px;
+
+                  .down span, .up span {
+                      fill: color(white);
+                  }
+              }
+
+              .section-toggle.shown, .section-toggle:hover {
+                  background: color(bondiBlue);
+              }
+
+              .panel {
+                  padding: 1px 7px;
+              }
+          }
+      }
+
+    .step {
+        margin: 1.5em .5em;
+        padding: $font18;
+        border: 1px solid #E5E5E5;
+
+        .step-number {
+            background-color: color(electricVioletDull);
+            font-size: .7em;
+            padding: 10px 20px;
+            margin-bottom: 1.25em;
+            width: fit-content;
+            text-align: center;
+        }
+
+        .step-title {
+            color: color(blueStone);
+            font-weight: bold;
+            font-size: .8em;
+            margin-bottom: 1.125em;
+        }
+
+        .step-description {
+            color: color(mirage);
+            font-size: .7em;
+        }
+    }
+
+    .review {
+        padding: 1.125em;
+        border: 1px solid #7E7E7E;
+        margin: 1.5em .5em;
+        text-align: center;
+
+        .reviewer {
+            color: color(ripePlum);
+            font-weight: bolder;
+            font-size: .8em;
+        }
+
+        .stars {
+            margin: 10px 0;
+
+            .turquoise span {
+                color: color(aqua);
+            }
+
+            .s-grey span {
+                color: color(grey);
+            }
+        }
+
+        .comment {
+            color: color(mirage);
+            font-size: .7em;
+            font-weight: bold;
+        }
+    }
+
+    .featured {
+        padding: $font18;
+        border: 1px solid;
+        margin: 1.5em .5em;
+        text-align: center;
+
+        .featured-tutor {
+            color: color(purple);
+            font-weight: bold;
+            font-size: .8em;
+        }
+
+        .tutor-description {
+            color: color(bluewood);
+            margin-top: 15px;
+            font-size: .7em;
+        }
+
+        .stars {
+            margin: 10px 0;
+
+            .blue span {
+                color: color(bondiBlue);
+            }
+
+            .s-grey span {
+                color: color(grey);
+            }
+        }
+
+        .comment {
+            color: color(scorpion);
+            margin-bottom: 24px;
+            font-size: .7em;
+        }
+
+        .areas {
+            background: linear-gradient(180deg, rgba(0, 5, 117, 0.13) 0%, rgba(62, 0, 71, 0.24) 100%);
+            padding: 10px;
+            color: color(bluewood);
+            font-size: .65em;
+            font-weight: bold;
+            display: block;
+        }
+    }
+
+    .btn-link {
+        -webkit-border-radius: $webkitRadius;
+        border-radius: $borderRadius;
+        cursor: $pointer;
+        box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
+        text-decoration: none;
+    }
+
+    .trending {
+        background: rgba(0, 0, 0, 0.54);
+        padding: 1.9em 1.125em;
+        text-align: center;
+        font-size: .7em;
+
+        .did-you-know {
+            color: color(aqua);
+        }
+
+        .advert {
+            background: rgba(0, 5, 117, 0.42);
+            padding: 10px;
+            color: color(persimmon);
+            margin: 30px 0;
+        }
+
+        .check-out {
+            color: color(magenta);
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .trends {
+            color: color(white);
+            padding: .3em .7em;
+            font-size: 1.125em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .trend-icon {
+            margin-right: 10px;
+        }
+
+        .facebook {
+            background-color: color(facebook);
+            margin-right: 20px;
+        }
+
+        .twitter {
+            background-color: color(twitter);
+        }
+    }
+
+    footer {
+        font-weight: bold;
+
+        #lighter {
+            background: color(bluewood);
+            padding: 15px 5px;
+            color: color(aqua);
+            fill: color(aqua);
+
+            #contacts-title, #find-us-title {
+                color: color(white);
+                text-align: center;
+                font-size: 1.125em;
+                margin: 15px 0;
+            }
+            #contacts {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                #mobile, #mail {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+
+                    .icon-text {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                #mobile {
+                    margin-right: 10px;
+                }
+            }
+
+            #social {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                a {
+                    color: color(aqua);
+                }
+            }
+
+            .footer-icon {
+                margin-right: 10px;
+            }
+        }
+
+        #darken {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: .9em;
+            padding: 20px 5px;
+            background: color(mirage);
+
+            .copyright {
+                color: color(vividViolet);
+            }
+
+            .company {
+                color: color(magenta);
+            }
+        }
+    }
+
+    .side-bar {
+        background-color: color(bluewood);
+        width: 63%;
+        display: flex;
+        flex-direction: column;
+        z-index: 100;
+        top: $navBarHeight;
+        right: 0;
+        position: fixed;
+        height: 100%;
+        padding: 10px 0;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        .menu-title {
+            color: #A8A8A8;
+            font-size: 1.1em;
+            text-align: center;
+            display: block;
+        }
+
+        a.menu-item, .menu-sub-item {
+            display: block;
+            text-decoration: none;
+        }
+
+        .menu-sub-item {
+            color: #C0FFFF;
+            font-size: 1em;
+            padding: 15px 25px;
+        }
+
+        .menu-divider {
+            height: 2px;
+            color: #9A969B;
+            margin: 10px 30px;
+        }
+
+        .menu-item {
+            color: color(aqua);
+            padding: 20px 15px;
+            width: 100%;
+            cursor: $pointer;
+        }
+
+        .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {
+            background-color: color(mirage);
+        }
+    }
+
+}
+
+.hidden {
+    display: none;
+}
+
+.page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.sign-up-modal {
+    background-color: color(bluewood);
+    z-index: 1000;
+    position: fixed;
+    width: 90%;
+    top: 11%;
+    left: 3%;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 5px;
+
+    .close-icon {
+        right: 10px;
+        top: 5px;
+        position: absolute;
+        color: #9A969B;
+        cursor: $pointer;
+    }
+
+    .sign-up-text {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        color: color(darkGrey);
+        text-decoration: underline;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .user-title {
+        font-size: 1em;
+        color: color(white);
+        margin: 20px 0 20px 20px ;
+    }
+
+    hr {
+        border: 2px solid #9A969B;
+        margin: 10px 20px;
+    }
+
+    .clients-btn, .tutors-btn {
+        padding: .5em 1.5em;
+        display: inline-block;
+        box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
+        margin-left: 20px;
+        margin-bottom: 15px;
+        border: 0.2em solid;
+    }
+
+    .clients-btn {
+        background-color: color(magenta);
+        color: color(white);
+        border-color: color(mirage);
+        font-weight: bold;
+    }
+
+    .tutors-btn {
+        background-color: color(mirage);
+        color: color(magenta);
+        border-color: color(magenta);
+    }
+
+    .client-btns, .tutor-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+}
