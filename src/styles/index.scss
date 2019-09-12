@@ -3,7 +3,7 @@ $colors: (
         magenta: #DC00FE, mirage: #1B2531, dullMirage: rgba(27, 37, 49, 0.8), scorpion: #625E5D,
         bluewood: #263246, vividViolet: #9F34AF, purple: #740186, grey: #CBC6C6, darkGrey: #A8A8A8,
         bondiBlue: #00AEAE, blueStone: #006A6A, clairvoyant: #36043E, ripePlum: #5B0069,
-        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3
+        persimmon: #FF7058, facebook: #3B5999, twitter: #1DA1F3, robinsEggBlue: #01d3d3
 );
 
 @function color($name) {
@@ -68,7 +68,7 @@ body {
       }
 
       .toggle span{
-          fill: color(aqua);
+          fill: color(robinsEggBlue);
           cursor: $pointer;
       }
   }
@@ -78,14 +78,14 @@ body {
         flex-direction: column;
         align-items: center;
         margin-top: $navBarHeight;
-        padding: 10px 0;
+        padding: 20px 0;
 
         .teecha-caption {
             box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 10px 0 16px 0;
+            margin: 0 0 16px 0;
             padding: 5px;
             font-size: $font18;
             font-weight: bold;
@@ -108,7 +108,7 @@ body {
           flex-direction: row;
           justify-content: space-evenly;
           align-items: center;
-          margin-top: 16px;
+          margin: 30px 0 16px 0;
           padding: 0 10px;
           border-radius: 5px;
 
@@ -139,7 +139,7 @@ body {
               color: color(vividViolet);
               text-align: center;
               font-size: 1.25em;
-              margin-bottom: 14px;
+              margin-bottom: 20px;
           }
 
           .home-tuition-areas {
@@ -191,7 +191,7 @@ body {
               color: color(grey);
               text-align: center;
               font-size: .8em;
-              margin-top: 14px;
+              margin-top: 18px;
           }
 
       }
@@ -274,7 +274,7 @@ body {
 
     .sections {
           background: linear-gradient(161.25deg, rgba(157, 162, 170, 0.2) 7.23%, rgba(75, 84, 98, 0.2) 90.59%);
-          padding: 15px 0;
+          padding: 30px 0;
 
           #sections-title {
               color: color(mirage);
@@ -488,8 +488,8 @@ body {
         #lighter {
             background: color(bluewood);
             padding: 15px 5px;
-            color: color(aqua);
-            fill: color(aqua);
+            color: color(robinsEggBlue);
+            fill: color(robinsEggBlue);
 
             #contacts-title, #find-us-title {
                 color: color(white);
@@ -528,7 +528,7 @@ body {
                 justify-content: center;
                 align-items: center;
                 a {
-                    color: color(aqua);
+                    color: color(robinsEggBlue);
                 }
             }
 
@@ -635,7 +635,7 @@ body {
         right: 10px;
         top: 5px;
         position: absolute;
-        color: #9A969B;
+        color: white;
         cursor: $pointer;
     }
 
