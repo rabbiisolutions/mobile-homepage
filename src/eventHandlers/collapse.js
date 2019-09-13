@@ -52,6 +52,7 @@ const sectionCollapseHandler = evt => {
     lastSection = current; // lastNode equal to current element
   }
   toggle(current);
+  element.scrollIntoView();
 };
 
 export default sectionCollapseHandler;
