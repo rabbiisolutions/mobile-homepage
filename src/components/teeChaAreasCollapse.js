@@ -1,4 +1,4 @@
-import mobileAccordion from "../utils/accordion";
+import mobileAccordion from "./utils/accordion";
 import texts from "../constants/texts";
 import teeChaAreasLists from "../constants/teeChaAreasLists";
 import React from "react";

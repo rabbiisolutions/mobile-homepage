@@ -1,8 +1,8 @@
 import React from "react";
-import Icon from "../utils/icon";
-import bulb from "../../icons/idea.svg"
+import Icon from "./utils/icon";
+import bulb from "../icons/idea.svg"
 import texts from "../constants/texts";
-import webpIsSupported from "../../helpers/webp";
+import webpIsSupported from "../helpers/webp";
 import teeChaAreasCollapse from "./teeChaAreasCollapse";
 
 const MobileLanding = () => {

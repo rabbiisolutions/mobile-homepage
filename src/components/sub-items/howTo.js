@@ -1,4 +1,4 @@
-import mobileAccordion from "../../utils/accordion";
+import mobileAccordion from "../utils/accordion";
 import Step from "./Step";
 
 const HowTo = (steps, bgClass, filter) => {

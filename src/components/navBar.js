@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../utils/logo";
-import Icon from "../utils/icon";
-import toggle from "../../icons/list.svg"
-import Button from "../utils/button";
+import Logo from "./utils/logo";
+import Icon from "./utils/icon";
+import toggle from "../icons/list.svg"
+import Button from "./utils/button";
 import texts from "../constants/texts";
-import signUpHandler from "../../events/signUpModal";
-import menuToggle from "../../events/menuToggle";
+import signUpHandler from "../events/signUpModal";
+import menuToggle from "../events/menuToggle";
 
 
 const MobileNavBar = () => {

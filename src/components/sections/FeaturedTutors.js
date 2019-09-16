@@ -1,5 +1,5 @@
-import FeaturedTutor from "../utils/featuredTutor";
-import mobileAccordion from "../../utils/accordion";
+import FeaturedTutor from "../sub-items/featuredTutor";
+import mobileAccordion from "../utils/accordion";
 import featuredTutors from "../../constants/featuredTutors";
 
 

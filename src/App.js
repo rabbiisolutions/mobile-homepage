@@ -1,11 +1,11 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
-import MobileNavBar from "./components/mobile/navBar";
-import MobileLanding from "./components/mobile/landing";
-import Sections from "./components/mobile/sections";
-import MobileFooter from "./components/mobile/footer";
+import MobileNavBar from "./components/navBar";
+import MobileLanding from "./components/landing";
+import Sections from "./components/sections";
+import MobileFooter from "./components/footer";
 import SignUpModal from "./components/utils/signUpModal";
-import SideBar from "./components/mobile/sideBar";
+import SideBar from "./components/sideBar";
 import backDropHandler from "./events/backDrop";
 
 

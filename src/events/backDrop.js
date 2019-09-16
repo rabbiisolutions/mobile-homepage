@@ -1,4 +1,4 @@
-import texts from "../components/constants/texts";
+import texts from "../constants/texts";
 
 const backDropHandler = e => {
   let modal = document.getElementsByClassName('sign-up-modal')[0];

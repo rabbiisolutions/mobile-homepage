@@ -1,5 +1,5 @@
 import TeeChaSteps from "../../constants/TeeChaSteps";
-import HowTo from "../utils/howTo";
+import HowTo from "../sub-items/howTo";
 
 const HowTeeChaWorks = () => {
   return (

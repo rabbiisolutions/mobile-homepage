@@ -1,7 +1,7 @@
 import clientReviews from "../constants/reviews";
-import Review from "./utils/review";
-import mobileAccordion from "../utils/accordion";
-import BackGround from "../utils/backGround";
+import Review from "./sub-items/review";
+import mobileAccordion from "./utils/accordion";
+import BackGround from "./utils/backGround";
 
 
 const Reviews = () => {

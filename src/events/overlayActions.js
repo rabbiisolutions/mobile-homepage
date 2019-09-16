@@ -1,4 +1,4 @@
-import texts from "../components/constants/texts";
+import texts from "../constants/texts";
 
 const overlayAction = (target) => {
   const backDrop = document.getElementsByClassName('page-mask')[0];

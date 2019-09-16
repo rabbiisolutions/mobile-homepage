@@ -1,4 +1,4 @@
-import ListItem from "../utils/listItems";
+import ListItem from "../components/utils/listItems";
 import teeChaAreas from "./teeChaAreas";
 
 const academics = ListItem(teeChaAreas.academics);

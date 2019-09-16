@@ -1,6 +1,6 @@
 import howToBeATutorSteps from "../../constants/beATutor";
-import HowTo from "../utils/howTo";
-import BackGround from "../../utils/backGround";
+import HowTo from "../sub-items/howTo";
+import BackGround from "../utils/backGround";
 
 const HowToBeATutor = () => {
   return (

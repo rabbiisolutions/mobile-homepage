@@ -1,6 +1,6 @@
 import React from "react";
 import texts from "../constants/texts";
-import mobileAccordion from "../utils/accordion";
+import mobileAccordion from "./utils/accordion";
 import HowTeeChaWorks from "./sections/howTeeChaWorks";
 import HowToGetATutor from "./sections/howToGet";
 import HowToBeATutor from "./sections/howToBe";
