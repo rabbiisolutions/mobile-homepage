@@ -7,8 +7,8 @@ import facebook from "../../../icons/social/facebook-f-brands.svg";
 import twitter from "../../../icons/social/twitter-brands.svg";
 import webpIsSupported from "../../../helpers/webp";
 import BackGround from "../../utils/backGround";
-import didYouKnowWebp from "../../../images/did-you-know.webp";
-import didYouKnowJpeg from "../../../images/did-you-know.jpg";
+import didYouKnowWebp from "../../../images/webp/did-you-know.webp";
+import didYouKnowJpeg from "../../../images/jpeg/did-you-know.jpg";
 
 
 const Trending = () => {

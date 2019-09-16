@@ -6,7 +6,7 @@ import Sections from "./components/mobile/sections";
 import MobileFooter from "./components/mobile/footer";
 import SignUpModal from "./components/utils/signUpModal";
 import SideBar from "./components/mobile/sideBar";
-import backDropHandler from "./eventHandlers/backDrop";
+import backDropHandler from "./events/backDrop";
 
 
 class App extends Component {

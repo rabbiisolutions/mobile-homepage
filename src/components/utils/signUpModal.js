@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonLink from "./ButtonLink";
 import texts from "../constants/texts";
-import signUpHandler from "../../eventHandlers/signUpModal";
+import signUpHandler from "../../events/signUpModal";
 
 const SignUpModal = () => {
   return (

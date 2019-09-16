@@ -1,5 +1,5 @@
 import React from "react";
-import sectionCollapseHandler from "../../eventHandlers/collapse";
+import sectionCollapseHandler from "../../events/collapse";
 import Icon from "./icon";
 import downIcon from "../../icons/down.svg";
 import upIcon from "../../icons/up.svg";

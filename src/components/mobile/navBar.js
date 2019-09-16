@@ -4,8 +4,8 @@ import Icon from "../utils/icon";
 import toggle from "../../icons/list.svg"
 import Button from "../utils/button";
 import texts from "../constants/texts";
-import signUpHandler from "../../eventHandlers/signUpModal";
-import menuToggle from "../../eventHandlers/menuToggle";
+import signUpHandler from "../../events/signUpModal";
+import menuToggle from "../../events/menuToggle";
 
 
 const MobileNavBar = () => {
