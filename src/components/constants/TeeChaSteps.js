@@ -1,12 +1,6 @@
-import partnership from "../../icons/teeChaSteps/partnership.svg";
-import placement from "../../icons/teeChaSteps/recruitment.svg";
-import management from "../../icons/teeChaSteps/tasks.svg";
-import joy from "../../icons/teeChaSteps/friendship.svg";
-
-
 const TeeChaSteps = [
   {
-    col: 3, stepNumber: 1, title: 'Partnership with Tutors', src: partnership,
+    col: 3, stepNumber: 1, title: 'Partnership with Tutors', 
     className: 'how-teecha-step-icon',
     description: 'TeeCha is an online  agency that offers home tuition jobs to ' +
         'qualified teachers and university students with high KCSE grades to carry' +
@@ -17,7 +11,7 @@ const TeeChaSteps = [
         'other international systems.'
   },
   {
-    col: 3, stepNumber: 2, title: 'Placement of Tutors', src: placement,
+    col: 3, stepNumber: 2, title: 'Placement of Tutors', 
     className: 'how-teecha-step-icon',
     description: 'Next, a parent who needs home tuition for their child contacts us ' +
         'through call or registers on our website. At this stage the tutors are all ' +
@@ -28,7 +22,7 @@ const TeeChaSteps = [
         ' in the system is selected for the client.'
   },
   {
-    col: 3, stepNumber: 3, title: 'Management Of Tuition', src: management,
+    col: 3, stepNumber: 3, title: 'Management Of Tuition', 
     className: 'how-teecha-step-icon',
     description: 'Once home tuition commences, we manage the tuition classes and the ' +
         'payment process. We make sure the tutors have planned well for all the classes' +
@@ -39,12 +33,12 @@ const TeeChaSteps = [
         ' tuition takes place.'
   },
   {
-    col: 3, stepNumber: 4, title: 'Give Joy', src: joy,
+    col: 3, stepNumber: 4, title: 'Give Joy', 
     className: 'how-teecha-step-icon',
-    description: 'We are the business of providing joy and satisfaction to all' +
-        ' stakeholders. We ensure the client and the student has joy and is' +
+    description: 'We are the business of providing  and satisfaction to all' +
+        ' stakeholders. We ensure the client and the student has  and is' +
         ' satisfied with the home tuition. We also ensure the tutor has' +
-        ' joy and is satisfied with the manner the home tuition is conducted.'
+        '  and is satisfied with the manner the home tuition is conducted.'
   }
 ];
 
