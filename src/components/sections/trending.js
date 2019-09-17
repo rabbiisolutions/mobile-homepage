@@ -5,10 +5,7 @@ import React from "react";
 import Icon from "../utils/icon";
 import facebook from "../../icons/social/facebook-f-brands.svg";
 import twitter from "../../icons/social/twitter-brands.svg";
-import webpIsSupported from "../../helpers/webp";
 import BackGround from "../utils/backGround";
-import didYouKnowWebp from "../../images/webp/did-you-know.webp";
-import didYouKnowJpeg from "../../images/jpeg/did-you-know.jpg";
 
 
 const Trending = () => {
@@ -18,14 +15,15 @@ const Trending = () => {
         <div className="advert">{texts.weekly}</div>
         <div className="check-out">{texts.checkOut}</div>
         <div className="social-links">
-          <ButtonLink href="" className="trends facebook" value="facebook"
+          <ButtonLink link="https://www.facebook.com/pg/rabbiitech/posts/" className="trends facebook" value="facebook"
                       icon={<Icon src={facebook} className="trend-icon" height={1.5}/>}/>
-          <ButtonLink href="" className="trends twitter" value="twitter"
+          <ButtonLink link="https://twitter.com/RabbiiTech/media" className="trends twitter" value="twitter"
                       icon={<Icon src={twitter} className="trend-icon" height={1.5}/>}/>
         </div>
         <div>
-          <img src={webpIsSupported() ? didYouKnowWebp: didYouKnowJpeg} alt="did-you-know"
-               className="did-you-know-image" width={257} height={202}/>
+          <iframe height="200" src="https://www.youtube.com/embed/h0eIfbQSMnI?loop=1&amp;playlist=aHA_UjXVQT"
+                  frameBorder="0" className="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen width="300"/>
         </div>
       </div>
   );
