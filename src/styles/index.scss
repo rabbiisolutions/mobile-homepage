@@ -342,6 +342,10 @@ body {
         .step-description {
             color: color(mirage);
             font-size: .7em;
+            .dots {
+                color: color(azure);
+                cursor: $pointer;
+            }
         }
     }
 
