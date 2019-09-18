@@ -52,7 +52,11 @@ const sectionCollapseHandler = evt => {
     lastSection = current; // lastNode equal to current element
   }
   toggle(current);
-  element.scrollIntoView();
+  try {
+    element.parentNode.previousElementSibling.previousElementSibling.scrollIntoView();
+  } catch (e) {
+    element.parentNode.parentNode.previousElementSibling.scrollIntoView();
+  }
 };
 
 export default sectionCollapseHandler;
