@@ -3,7 +3,7 @@ const howToBeATutorSteps = [
     col: 2, stepNumber: 1, title: 'Register or Call', 
     className: 'how-to-step-icon',
     description: 'It is very easy to get a home tuition job in Nairobi County' +
-        ' or other counties in Kenya, simply  or call 0772 915 361'
+        ' or other counties in Kenya, simply register or call 0772 915 361'
   },
   {
     col: 2, stepNumber: 2, title: 'Evaluation', 

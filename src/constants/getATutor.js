@@ -2,7 +2,7 @@ const howToGetATutorSteps = [
   {
     col: 2, stepNumber: 1, title: 'Register or Call', 
     className: 'how-to-step-icon',
-    description: 'It is simple. Simply  or call 0772 915 361 to get a home tutor.'
+    description: 'It is simple. Simply register or call 0772 915 361 to get a home tutor.'
   },
   {
     col: 2, stepNumber: 2, title: 'Preliminary Counselling and Evaluation' +
