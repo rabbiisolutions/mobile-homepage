@@ -17,9 +17,6 @@ const beATutor = 'Be a Tutor';
 const reviews = 'Reviews';
 const featuredTutors = 'Featured Tutors';
 const trending = 'Trending';
-const didYouKnow = 'Did You Know? Fun Facts';
-const weekly = 'On a weekly basis, Rabbii will be posting fun facts based on a particular topic.';
-const checkOut = 'Check out more fun facts on';
 const faceBook = 'facebook';
 const twitter = 'Twitter';
 const dot = '⦁ ';
@@ -49,8 +46,7 @@ const texts = {
   academics: academics, thi: thi, technology: technology, languages: languages, counselling: counselling, sports: sports,
   university: university, homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   signUpHow: signUpHow, getATutor: getATutor, beATutor: beATutor, reviews: reviews,
-  featuredTutors: featuredTutors, trending: trending, didYouKnow: didYouKnow, weekly: weekly,
-  checkOut: checkOut, faceBook: faceBook, twitter: twitter, dot: dot, turquoise: turquoise, grey: grey,
+  featuredTutors: featuredTutors, trending: trending, faceBook: faceBook, twitter: twitter, dot: dot, turquoise: turquoise, grey: grey,
   black: blue, howTo: howTo, signingUp: signingUp, signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, hr: hr, fakeComment: fakeComment, menuTitle: menuTitle,
   menuItems: menuItems, ourServices: ourServices, hidden: hidden

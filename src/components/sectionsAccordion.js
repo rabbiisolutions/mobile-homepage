@@ -6,7 +6,6 @@ import HowToGetATutor from "./sections/howToGet";
 import HowToBeATutor from "./sections/howToBe";
 import Reviews from "./reviews";
 import FeaturedTutors from "./sections/FeaturedTutors";
-import Trending from "./sections/trending";
 
 
 const name = 'sections-accordion';
@@ -46,13 +45,6 @@ const SectionsAccordion = () => {
           {mobileAccordion.toggle(texts.featuredTutors)}
           {
             FeaturedTutors()
-          }
-        </div>
-        ,
-        <div className={name} key={16} id="trending">
-          {mobileAccordion.toggle(texts.trending)}
-          {
-            Trending()
           }
         </div>
     );
