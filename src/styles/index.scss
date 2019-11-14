@@ -134,6 +134,7 @@ body {
           justify-content: center;
           align-items: inherit;
           border-radius: 5px;
+            margin-bottom: 20px;
 
           .home-tuition-areas-title {
               color: color(vividViolet);
@@ -671,14 +672,15 @@ body {
     display: inherit;
     flex-direction: inherit;
     justify-content: center;
-    align-items: inherit;
+    //align-items: inherit;
     border-radius: 5px;
 
     .sign-up-text {
-        color: color(vividViolet);
+        color: color(magenta);
         text-align: center;
-        font-size: 1.25em;
+        font-size: 1em;
         margin-bottom: 20px;
+        text-decoration: underline;
     }
 }
 
@@ -698,8 +700,9 @@ body {
     }
 
     hr {
-        border: 2px solid #9A969B;
+        border: 1px solid #9A969B;
         margin: 10px 20px;
+        width: inherit;
     }
 
     .clients-btn, .tutors-btn {
@@ -738,8 +741,8 @@ body {
     }
 
     .msg {
-        margin-top: 20px;
-        color: color(white);
+        margin: 20px 5px 0;
+        color: color(grey);
         font-size: .8em;
         text-align: center;
     }
