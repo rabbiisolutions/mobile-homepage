@@ -1,17 +1,15 @@
 import React from "react";
 import ButtonLink from "./ButtonLink";
-import texts from "../../constants/texts";
 import signUpHandler from "../../events/signUpModal";
 
-const SignUpModal = () => {
+const SignUpModal = (props) => {
   return (
-      <div className="sign-up-modal hidden">
-        <div className="close-icon" onClick={e => signUpHandler(e)}>&#10006;</div>
-        <div className="sign-up-text">{texts.signUp}</div>
+      <div className={props.className}>
+        <div className={"close-icon " + props.status} onClick={e => signUpHandler(e)}>&#10006;</div>
+        <div className="sign-up-text">{props.signUpText}</div>
         <div className="user-title">Clients/Parents</div>
         <div id="client-btns">
           <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="clients-btn" value="Get a Tutor"/>
-          <ButtonLink link="https://forms.gle/be1SkMLYMitwZLvS7" className="clients-btn" value="Client"/>
         </div>
         <hr className="sign-up-divider"/>
         <div className="user-title">Tutors</div>
@@ -20,6 +18,7 @@ const SignUpModal = () => {
           <ButtonLink link="https://forms.gle/ZU8GZrYVPWenL4r19" className="tutors-btn" value="TSC Tutor"/>
           <ButtonLink link="https://forms.gle/CmgUyZCWrnLgsqnC9" className="tutors-btn" value="Skills Tutor"/>
         </div>
+        <div className="msg">If you face difficulty in registering call, text or whatsapp on 0772 915 361</div>
       </div>
   );
 };

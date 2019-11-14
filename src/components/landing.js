@@ -4,6 +4,7 @@ import bulb from "../icons/idea.svg"
 import texts from "../constants/texts";
 import webpIsSupported from "../helpers/webp";
 import teeChaAreasCollapse from "./teeChaAreasCollapse";
+import SignUpModal from "./utils/signUpModal";
 
 const MobileLanding = () => {
   return (
@@ -19,6 +20,7 @@ const MobileLanding = () => {
           </div>
           <div className="home-tuition-info">{texts.homeTuitionInfo}</div>
         </div>
+        <SignUpModal className="sign-up div" signUpText="Sign Up to Receive Our Price List" status="hidden"/>
         <div className="slogan">
           <Icon src={bulb} className="idea" height={1.625}/>
           <span className="text">{texts.slogan}&nbsp;</span>

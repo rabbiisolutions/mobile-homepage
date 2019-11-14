@@ -7,6 +7,7 @@ import MobileFooter from "./components/footer";
 import SignUpModal from "./components/utils/signUpModal";
 import SideBar from "./components/sideBar";
 import backDropHandler from "./events/backDrop";
+import texts from "./constants/texts";
 
 
 class App extends Component {
@@ -14,7 +15,7 @@ class App extends Component {
     return (
         <Router>
           {MobileHome()}
-          <SignUpModal/>
+          <SignUpModal className="sign-up modal hidden" signUpText={texts.signUp}/>
         </Router>
     );
   }
