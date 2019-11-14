@@ -5,55 +5,29 @@ import React from "react";
 
 const name = 'teecha-collapse';
 
+const skills_areas = (
+    <div>
+      <div className="sub-category">Foreign Languages</div>
+      {teeChaAreasLists.fl}
+      <div className="sub-category">Games & Sports</div>
+      {teeChaAreasLists.gs}
+    </div>
+);
+
 const teeChaAreasCollapse = () => {
   const collapses = [];
   collapses.push(
       <div className={name} key={11}>
-        {mobileAccordion.toggle(texts.dot + texts.academics)}
+        {mobileAccordion.toggle(texts.dot + texts.academic)}
         {
           mobileAccordion.panel(teeChaAreasLists.academics)
         }
       </div>
       ,
       <div className={name} key={12}>
-        {mobileAccordion.toggle(texts.dot + texts.thi)}
+        {mobileAccordion.toggle(texts.dot + texts.skills)}
         {
-          mobileAccordion.panel(teeChaAreasLists.thi)
-        }
-      </div>
-      ,
-      <div className={name} key={13}>
-        {mobileAccordion.toggle(texts.dot + texts.technology)}
-        {
-          mobileAccordion.panel(teeChaAreasLists.technology)
-        }
-      </div>
-      ,
-      <div className={name} key={14}>
-        {mobileAccordion.toggle(texts.dot + texts.languages)}
-        {
-          mobileAccordion.panel(teeChaAreasLists.languages)
-        }
-      </div>
-      ,
-      <div className={name} key={15}>
-        {mobileAccordion.toggle(texts.dot + texts.counselling)}
-        {
-          mobileAccordion.panel(teeChaAreasLists.counselling)
-        }
-      </div>
-      ,
-      <div className={name} key={16}>
-        {mobileAccordion.toggle(texts.dot + texts.sports)}
-        {
-          mobileAccordion.panel(teeChaAreasLists.sports)
-        }
-      </div>
-      ,
-      <div className={name} key={17}>
-        {mobileAccordion.toggle(texts.dot + texts.university)}
-        {
-          mobileAccordion.panel(teeChaAreasLists.university)
+          mobileAccordion.panel(skills_areas)
         }
       </div>
   );

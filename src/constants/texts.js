@@ -3,6 +3,8 @@ const teeCha = 'TeeCha';
 const homeTuition = 'Home Tuition';
 const homeTuitionAreas = 'Home Tuition Areas';
 const academics = 'Academics';
+const academic = 'Academic Tuition';
+const skills = 'Skills Tuition';
 const thi = 'Talents Hobbies and Interests';
 const technology = 'Technology';
 const languages = 'Languages';
@@ -49,7 +51,7 @@ const texts = {
   featuredTutors: featuredTutors, trending: trending, faceBook: faceBook, twitter: twitter, dot: dot, turquoise: turquoise, grey: grey,
   black: blue, howTo: howTo, signingUp: signingUp, signUp: signUp, contacts: contacts, findUs: findUs,
   safaricom: safaricom, telkom: telkom, sema: sema, hr: hr, fakeComment: fakeComment, menuTitle: menuTitle,
-  menuItems: menuItems, ourServices: ourServices, hidden: hidden
+  menuItems: menuItems, ourServices: ourServices, hidden: hidden, academic: academic, skills: skills
 };
 
 export default texts;
