@@ -710,27 +710,6 @@ body {
         width: inherit;
     }
 
-    .clients-btn, .tutors-btn {
-        padding: .5em 1.5em;
-        display: inline-block;
-        box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
-        margin: 0 10px 15px 10px;
-        border: 0.2em solid;
-    }
-
-    .clients-btn {
-        background-color: color(magenta);
-        color: color(white);
-        border-color: color(mirage);
-        font-weight: bold;
-    }
-
-    .tutors-btn {
-        background-color: color(mirage);
-        color: color(magenta);
-        border-color: color(magenta);
-    }
-
     #client-btns {
         display: flex;
         justify-content: center;
@@ -752,4 +731,14 @@ body {
         text-align: center;
     }
 
+}
+
+.clients-btn, .tutors-btn {
+    padding: .5em 1.5em;
+    display: inline-block;
+    box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.25);
+    margin: 0 10px 15px 10px;
+    border: 0.2em solid color(magenta);
+    background-color: color(mirage);
+    color: color(magenta);
 }

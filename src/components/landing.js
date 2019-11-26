@@ -5,6 +5,7 @@ import texts from "../constants/texts";
 import webpIsSupported from "../helpers/webp";
 import teeChaAreasCollapse from "./teeChaAreasCollapse";
 import SignUpModal from "./utils/signUpModal";
+import ButtonLink from "./utils/ButtonLink";
 
 const MobileLanding = () => {
   return (
@@ -17,6 +18,9 @@ const MobileLanding = () => {
           <div className="home-tuition-areas-title">{texts.homeTuitionAreas}</div>
           <div className="home-tuition-areas">
             {teeChaAreasCollapse()}
+          </div>
+          <div id={'tuition-jobs'}>
+            <ButtonLink link="https://tuition-jobs.rabbii.co.ke/" className="clients-btn" value="View Available Tuition Jobs"/>
           </div>
           <div className="home-tuition-info">{texts.homeTuitionInfo}</div>
         </div>
