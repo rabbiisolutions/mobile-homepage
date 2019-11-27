@@ -18,7 +18,7 @@ import React from "react";
 
 const HowTeeChaWorks = () => {
   return (
-      <section>
+      <section className={'how-teecha-works'}>
         <section className={'tutor-col col'}>
           <div className={'user-title tutor-title'}>Tutor</div>
           <CircleWidget src={signup} text={'Tutor Sign Up'}/>
@@ -44,7 +44,7 @@ const HowTeeChaWorks = () => {
           <CircleWidget src={studInfo} text={'Give Student Client Info'}/>
           <DownArrow/>
           <CircleWidget src={gets} text={'Gets Tutor'}/>
-          <Icon src={dotted} width={1.25} height={11.875} className={'dotted-arrow'}/>
+          <Icon src={dotted} width={1.25} height={12.5} className={'dotted-arrow'}/>
           <CircleWidget src={start} text={'Session Begins'}/>
           <DownArrow/>
           <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>
