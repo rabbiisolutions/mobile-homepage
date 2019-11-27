@@ -5,7 +5,7 @@ const CircleWidget = (props) => {
   return (
       <div className={'circle-widget'}>
         <div className={'circle-icon'}>
-          <Icon src={props.src} className={'rounded'} width={6.25} height={6.25}/>
+          <Icon src={props.src} className={'rounded'} width={3.125} height={2.8125}/>
         </div>
         <div className={'text'}>{props.text}</div>
       </div>
