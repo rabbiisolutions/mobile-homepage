@@ -54,7 +54,7 @@ const MobileFooter = () => {
           </div>
           <div id="links-title">Links</div>
           <div id={'links'}>
-            <a href={'https://policy.rabbii.co.ke'}>Privacy Policy</a>
+            <a href={'https://privacy.rabbii.co.ke'}>Privacy Policy</a>
           </div>
         </div>
         <div id="darken">
