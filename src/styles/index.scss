@@ -579,7 +579,7 @@ body {
             color: color(robinsEggBlue);
             fill: color(robinsEggBlue);
 
-            #contacts-title, #find-us-title {
+            #contacts-title, #find-us-title, #links-title {
                 color: color(white);
                 text-align: center;
                 font-size: 1.125em;
@@ -609,6 +609,20 @@ body {
                 #mobile {
                     margin-right: 10px;
                 }
+            }
+
+            #links-title {
+                margin-top: 30px;
+            }
+
+            #links {
+                display: flex;
+                justify-content: center;
+            }
+
+            #links a {
+                text-decoration: none;
+                color: color(robinsEggBlue);
             }
 
             #social {
