@@ -724,7 +724,7 @@ body {
 }
 
 .sign-up.modal {
-    background-color: color(bluewood);
+    background-color: white;
     z-index: 1000;
     width: 90%;
     position: fixed;
@@ -732,15 +732,45 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     max-height: calc(100% - 100px);
-    padding: 20px 0;
+    padding: 20px 5px;
     border-radius: 5px;
 
     .sign-up-text {
         text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-        color: color(darkGrey);
+        color: color(mirage);
         text-decoration: underline;
         font-size: 1.5em;
         text-align: center;
+        font-weight: bold;
+    }
+
+    section {
+        border: 1px solid #147CAC;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    .close-icon {
+        color: color(dullMirage);
+    }
+
+    hr {
+        display: none;
+    }
+
+    .user-title {
+        color: #075174;
+        font-weight: bold;
+    }
+
+    .msg {
+        color: color(mirage);
+    }
+
+    .clients-btn, .tutors-btn {
+        border: 0.2em solid color(mirage);
+        background-color: #0093D7;
+        color: color(mirage);
     }
 }
 
