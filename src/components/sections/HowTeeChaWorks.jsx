@@ -1,4 +1,4 @@
-import CircleWidget from "../sub-items/CircleWidget";
+import CircleWidget from "../sub-items/CircleWidget.jsx";
 import signup from "../../icons/teecha/application.svg"
 import proInfo from "../../icons/teecha/resume.svg"
 import studInfo from "../../icons/teecha/resume (1).svg"

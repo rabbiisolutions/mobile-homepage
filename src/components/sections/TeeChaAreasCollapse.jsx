@@ -1,6 +1,6 @@
-import mobileAccordion from "./utils/accordion";
-import texts from "../constants/texts";
-import teeChaAreasLists from "../constants/teeChaAreasLists";
+import Accordion from "../utils/Accordion";
+import texts from "../../constants/texts";
+import teeChaAreasLists from "../../constants/TeeChaAreasLists";
 import React from "react";
 
 const name = 'teecha-collapse';
@@ -18,16 +18,16 @@ const teeChaAreasCollapse = () => {
   const collapses = [];
   collapses.push(
       <div className={name} key={11}>
-        {mobileAccordion.toggle(texts.dot + texts.academic)}
+        {Accordion.toggle(texts.dot + texts.academic)}
         {
-          mobileAccordion.panel(teeChaAreasLists.academics)
+          Accordion.panel(teeChaAreasLists.academics)
         }
       </div>
       ,
       <div className={name} key={12}>
-        {mobileAccordion.toggle(texts.dot + texts.skills)}
+        {Accordion.toggle(texts.dot + texts.skills)}
         {
-          mobileAccordion.panel(skills_areas)
+          Accordion.panel(skills_areas)
         }
       </div>
   );

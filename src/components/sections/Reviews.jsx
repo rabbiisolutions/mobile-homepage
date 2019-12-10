@@ -1,7 +1,6 @@
-import clientReviews from "../constants/reviews";
-import Review from "./sub-items/review";
-import mobileAccordion from "./utils/accordion";
-import BackGround from "./utils/backGround";
+import clientReviews from "../../constants/reviews";
+import Review from "../sub-items/Review";
+import Accordion from "../utils/Accordion";
 
 
 const Reviews = () => {
@@ -13,10 +12,10 @@ const Reviews = () => {
       Review(clientReviews[3]),
   );
   return (
-          mobileAccordion.panel(
+          Accordion.panel(
               reviews.map((review) => (
                   review
-              )), 'reviews-' + BackGround(), 'reviews-filter'
+              ))
           )
   )
 };

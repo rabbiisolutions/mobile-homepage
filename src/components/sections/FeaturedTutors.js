@@ -1,5 +1,5 @@
-import FeaturedTutor from "../sub-items/featuredTutor";
-import mobileAccordion from "../utils/accordion";
+import FeaturedTutor from "../sub-items/FeaturedTutor";
+import Accordion from "../utils/Accordion";
 import featuredTutors from "../../constants/featuredTutors";
 
 
@@ -10,7 +10,7 @@ const FeaturedTutors = () => {
       FeaturedTutor(featuredTutors[1]),
   );
   return (
-          mobileAccordion.panel(
+          Accordion.panel(
               featured.map((tutor) => (
                   tutor
               )),

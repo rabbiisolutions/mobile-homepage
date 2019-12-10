@@ -1,22 +1,21 @@
 import React from "react";
-import Icon from "./utils/icon";
-import phone from "../icons/social/phone-volume-solid.svg"
-import whatsapp from "../icons/social/whatsapp-brands.svg"
-import mail from "../icons/social/gmail.svg"
-import twitter from "../icons/social/twitter-brands.svg"
-import youtube from "../icons/social/youtube-brands.svg"
-import facebook from "../icons/social/facebook-f-brands.svg"
-import linkedin from "../icons/social/linkedin-in-brands.svg"
-import texts from "../constants/texts";
+import Icon from "../utils/icon";
+import phone from "../../icons/contacts/ic_round-perm-phone-msgphone.svg"
+import whatsapp from "../../icons/contacts/bx_bxl-whatsappwhatsapp.svg"
+import mail from "../../icons/contacts/bx_bx-mail-sendmail.svg"
+import twitter from "../../icons/social/jam_twitter-circletwitter.svg"
+import youtube from "../../icons/social/jam_youtube-circleyoutube.svg"
+import facebook from "../../icons/social/jam_facebook-circlefacebook.svg"
+import linkedin from "../../icons/social/jam_linkedin-circlelinkedin.svg"
+import texts from "../../constants/texts";
 
 
-const MobileFooter = () => {
+const Footer = () => {
   return (
       <footer>
         <div id="lighter">
           <div id="contacts-title">{texts.contacts}</div>
           <div id="contacts">
-            <div id="mobile">
               <span className="icon-text">
                 <Icon src={phone} className="footer-icon" height={2.5} width={2.5}/>
                 <span>{texts.safaricom}</span>
@@ -25,17 +24,10 @@ const MobileFooter = () => {
                 <Icon src={whatsapp} className="footer-icon" height={2.5} width={2.5}/>
                 <span>{texts.telkom}</span>
               </span>
-            </div>
-            <div id="mail">
               <span className="icon-text">
                 <Icon src={mail} className="footer-icon" height={3} width={2.5}/>
                 <span>{texts.sema}</span>
               </span>
-              <span className="icon-text">
-                <Icon src={mail} className="footer-icon" height={3} width={2.5}/>
-                <span>{texts.hr}</span>
-              </span>
-            </div>
           </div>
           <div id="find-us-title">{texts.findUs}</div>
           <div id="social">
@@ -65,4 +57,4 @@ const MobileFooter = () => {
   );
 };
 
-export default MobileFooter;
+export default Footer;

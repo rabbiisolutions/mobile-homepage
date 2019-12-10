@@ -1,8 +1,8 @@
 import React from "react";
 import sectionCollapseHandler from "../../events/collapse";
 import Icon from "./icon";
-import downIcon from "../../icons/down.svg";
-import upIcon from "../../icons/up.svg";
+import downIcon from "../../icons/bx_bx-caret-downdown.svg";
+import upIcon from "../../icons/bx_bx-caret-downup.svg";
 
 const panel = (data, bgClass, filter) => {
   return (
@@ -23,6 +23,6 @@ const toggle = (title) => {
       </div>);
 };
 
-const mobileAccordion = {panel: panel, toggle: toggle};
+const Accordion = {panel: panel, toggle: toggle};
 
-export default mobileAccordion;
+export default Accordion;
