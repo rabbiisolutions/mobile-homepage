@@ -7,16 +7,16 @@ const TeeCha = () => {
   return (
       <section id={'teecha'}>
         <div id="title">{texts.teeCha}</div>
-        <div id="caption">{texts.homeTuition}</div>
+        <a id="caption" href={'https://catalogue.rabbii.co.ke/'}>{texts.homeTuition}</a>
         <div id="teecha-areas">
-          <div className="home-tuition-areas-title">{texts.homeTuitionAreas}</div>
-          <div className="home-tuition-areas">
+          <div id="home-tuition-areas-title">{texts.homeTuitionAreas}</div>
+          <div id="home-tuition-areas">
             {teeChaAreasCollapse()}
           </div>
           <div id={'catalogue'}>
             <ButtonLink link="https://catalogue.rabbii.co.ke/" className="services" value="Learn more about Our Services"/>
           </div>
-          <div className="home-tuition-info">{texts.homeTuitionInfo}</div>
+          <div id="home-tuition-info">{texts.homeTuitionInfo}</div>
         </div>
         <div id={'tuition-jobs'}>
           <ButtonLink link="https://tuition-jobs.rabbii.co.ke/" className="services" value="View available Tuition Jobs"/>
