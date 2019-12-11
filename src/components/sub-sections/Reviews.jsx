@@ -15,7 +15,7 @@ const Reviews = () => {
           Accordion.panel(
               reviews.map((review) => (
                   review
-              ))
+              )), 'reviews'
           )
   )
 };

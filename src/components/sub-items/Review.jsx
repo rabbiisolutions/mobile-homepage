@@ -7,7 +7,7 @@ const Review = (props) => {
         <div className="reviewer">
           <span>{props.name}</span>,&nbsp;<span>{props.description}</span>
         </div>
-        <div className="stars">{renderStars({shade: props.stars.shade, height: 1, key: props.stars.key})}</div>
+        <div className="stars">{renderStars({shade: props.stars.shade, height: 4, key: props.stars.key})}</div>
         <div className="comment">{props.comment}</div>
       </div>
   );

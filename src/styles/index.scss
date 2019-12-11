@@ -496,18 +496,18 @@ a:hover {
     }
 }
 
-.featured-bg {
+.featured-bg, .reviews {
     background-color: color(concrete);
     margin-top: 4vw;
 }
 
-.featured {
+.featured, .review {
     padding: 4vw;
     border: 1px solid;
     margin: 8vw 3vw 12vw;
     text-align: center;
 
-    .featured-tutor {
+    .featured-tutor, .reviewer {
         color: color(mirage);
         font-weight: 600;
         font-size: 3.75vw;
@@ -554,54 +554,5 @@ a:hover {
         font-size: 3.5vw;
         font-weight: 300;
         display: block;
-    }
-}
-
-.review {
-    padding: 1.125em;
-    border: 1px solid #7E7E7E;
-    margin: 1.5em .5em;
-    text-align: center;
-
-    .reviewer {
-        color: color(ripePlum);
-        font-weight: bolder;
-        font-size: .8em;
-        display: flex;
-        justify-items: center;
-        flex-wrap: wrap;
-
-        .icon-link {
-            margin-left: 15px;
-            .facebook {
-                color: color(facebook);
-            }
-
-            .twitter {
-                color: color(twitter);
-            }
-
-            .azure {
-                fill: color(azure);
-            }
-        }
-    }
-
-    .stars {
-        margin: 10px 0;
-
-        .turquoise span {
-            color: color(aqua);
-        }
-
-        .s-grey span {
-            color: color(grey);
-        }
-    }
-
-    .comment {
-        color: color(mirage);
-        font-size: .7em;
-        font-weight: bold;
     }
 }
