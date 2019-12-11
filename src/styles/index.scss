@@ -227,5 +227,38 @@ header {
 }
 
 #sections {
+    #sections-lead {
+        color: color(mirage80);
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 300;
+        margin: 1.5em;
+    }
+}
 
+.sections-accordion {
+    color: color(white);
+    //font-size: 1.25em;
+    padding: 1.5vw 3vw;
+
+    .section-toggle {
+        color: color(deepSeaGreen);
+        background-color: color(concrete);
+        border: 1px solid color(silverSand);
+        //width: 100%;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 4.25vw;
+    }
+
+    .section-toggle.shown, .section-toggle:hover {
+        //background: color(curiosBlue);
+    }
+
+    .panel {
+        padding: 1px 7px;
+    }
 }
