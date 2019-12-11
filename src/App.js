@@ -25,7 +25,7 @@ class App extends Component {
           </main>
           <Footer/>
           <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
-          <SignUpModal className="sign-up modal hidden" signUpText={texts.signUpModalTitle}/>
+          <SignUpModal className="sign-up-modal hidden" signUpText={texts.signUpModalTitle}/>
         </Router>
     );
   }
