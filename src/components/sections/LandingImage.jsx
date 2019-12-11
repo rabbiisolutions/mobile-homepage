@@ -14,9 +14,10 @@ const LandingImage = () => {
             src={landingJ}
             srcWebp={landingW}
             className={'landing-image'}
+            alt={'joyous-student'}
         />
         <div id="slogan">
-          <Icon src={bulb} className="idea" height={1.625}/>
+          <Icon src={bulb} className="idea" height={4} units={'vw'}/>
           <span className="text">{texts.slogan}&nbsp;</span>
         </div>
       </header>
