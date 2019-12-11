@@ -5,7 +5,8 @@ $colors: (
         // content
         deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
         mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
-        mirage64: rgba(27, 37, 49, 0.64), mirage25: rgba(27, 37, 49, 0.25),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25),
         // borders and accordion
         silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
         // footer
@@ -210,10 +211,6 @@ header {
     background-color: color(white);
 }
 
-.skills {
-
-}
-
 .btn-link {
     -webkit-border-radius: $webkitRadius;
     border-radius: $borderRadius;
@@ -281,10 +278,6 @@ header {
         color: color(curiosBlue);
         cursor: $pointer;
         border-color: color(curiosBlue);
-    }
-
-    .panel {
-        padding: 1px 7px;
     }
 }
 
@@ -500,5 +493,115 @@ a:hover {
         color: color(deepSeaGreen);
         font-size: 7vw;
         text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.featured-bg {
+    background-color: color(concrete);
+    margin-top: 4vw;
+}
+
+.featured {
+    padding: 4vw;
+    border: 1px solid;
+    margin: 8vw 3vw 12vw;
+    text-align: center;
+
+    .featured-tutor {
+        color: color(mirage);
+        font-weight: 600;
+        font-size: 3.75vw;
+    }
+
+    .tutor-description {
+        color: color(mirage74);
+        margin-top: 2.5vw;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+
+    .stars {
+        margin: 3vw 0;
+
+        .blue span {
+            color: color(oldGold);
+        }
+
+        .s-grey span {
+            color: color(silver);
+        }
+
+        .star {
+            margin-right: 2vw;
+        }
+    }
+
+    .comment {
+        color: color(mirage);
+        margin-bottom: 24px;
+        font-size: 3.5vw;
+        font-weight: 300;
+
+        div {
+            margin-bottom: 4vw;
+        }
+    }
+
+    .areas {
+        background: color(mercury);
+        padding: 10px;
+        color: color(mirage);
+        font-size: 3.5vw;
+        font-weight: 300;
+        display: block;
+    }
+}
+
+.review {
+    padding: 1.125em;
+    border: 1px solid #7E7E7E;
+    margin: 1.5em .5em;
+    text-align: center;
+
+    .reviewer {
+        color: color(ripePlum);
+        font-weight: bolder;
+        font-size: .8em;
+        display: flex;
+        justify-items: center;
+        flex-wrap: wrap;
+
+        .icon-link {
+            margin-left: 15px;
+            .facebook {
+                color: color(facebook);
+            }
+
+            .twitter {
+                color: color(twitter);
+            }
+
+            .azure {
+                fill: color(azure);
+            }
+        }
+    }
+
+    .stars {
+        margin: 10px 0;
+
+        .turquoise span {
+            color: color(aqua);
+        }
+
+        .s-grey span {
+            color: color(grey);
+        }
+    }
+
+    .comment {
+        color: color(mirage);
+        font-size: .7em;
+        font-weight: bold;
     }
 }
