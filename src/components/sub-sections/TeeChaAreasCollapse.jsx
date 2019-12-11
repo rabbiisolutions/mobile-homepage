@@ -20,14 +20,14 @@ const teeChaAreasCollapse = () => {
       <div className={name} key={11}>
         {Accordion.toggle(texts.dot + texts.academic)}
         {
-          Accordion.panel(teeChaAreasLists.academics)
+          Accordion.panel(teeChaAreasLists.academics, 'areas-bg')
         }
       </div>
       ,
       <div className={name} key={12}>
         {Accordion.toggle(texts.dot + texts.skills)}
         {
-          Accordion.panel(skills_areas)
+          Accordion.panel(skills_areas, 'areas-bg', 'skills')
         }
       </div>
   );

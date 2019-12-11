@@ -186,12 +186,33 @@ header {
         color: color(curiosBlue);
         fill: color(curiosBlue);
     }
+
+    .sub-category {
+        font-size: 3.75vw;
+        text-align: center;
+    }
+
+    ul {
+        margin: 1.5vw 0 3vw;
+    }
 }
 
-/*.panel li {
-    color: color(aqua);
-    font-size: .85rem;
-}*/
+.panel li {
+    color: color(mirage);
+    font-size: 3.5vw;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 4vw;
+}
+
+.areas-bg {
+    padding-top: 2vw;
+    background-color: color(white);
+}
+
+.skills {
+
+}
 
 .btn-link {
     -webkit-border-radius: $webkitRadius;
@@ -471,6 +492,7 @@ a:hover {
         width: 100%;
         cursor: $pointer;
         font-weight: 300;
+        font-size: 4vw;
     }
 
     .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {

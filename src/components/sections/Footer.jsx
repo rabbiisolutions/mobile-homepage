@@ -51,7 +51,7 @@ const Footer = () => {
         </div>
         <div id="darken">
           <a href={'https://privacy.rabbii.co.ke'}>Privacy Policy</a>
-          <span className="copyright">&copy;&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;{new Date().getFullYear()}</span>
+          <h1 className="copyright">&copy;&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;{new Date().getFullYear()}</h1>
         </div>
       </footer>
   );
