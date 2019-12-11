@@ -9,6 +9,7 @@ import Footer from "./components/sections/Footer";
 // utilities
 import SignUpModal from "./components/utils/SignUpModal";
 import backDropHandler from "./events/backDrop";
+import SideBar from "./components/sections/sideBar";
 // text constants
 import texts from "./constants/texts";
 
@@ -26,6 +27,7 @@ class App extends Component {
           <Footer/>
           <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
           <SignUpModal className="sign-up-modal hidden" signUpText={texts.signUpModalTitle}/>
+          <SideBar/>
         </Router>
     );
   }

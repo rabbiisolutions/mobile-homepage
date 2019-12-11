@@ -437,3 +437,46 @@ a:hover {
     }
 
 }
+
+.side-bar {
+    background-color: color(concrete);
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    top: $navBarHeight;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    padding: 10px 0;
+
+    .menu-title {
+        color: color(mirage64);
+        font-size: 6vw;
+        text-align: center;
+        display: block;
+        padding-bottom: 4vw;
+        border-bottom: 1px solid color(mirage25);
+        font-weight: 300;
+    }
+
+    a.menu-item, .menu-sub-item {
+        display: block;
+        text-decoration: none;
+    }
+
+    .menu-item {
+        color: color(mirage);
+        padding: 20px 15px;
+        width: 100%;
+        cursor: $pointer;
+        font-weight: 300;
+    }
+
+    .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {
+        font-weight: bold;
+        color: color(deepSeaGreen);
+        font-size: 7vw;
+        text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+    }
+}
