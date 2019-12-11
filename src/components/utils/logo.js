@@ -4,7 +4,9 @@ import Icon from './icon'
 
 const Logo = (props) => {
   return (
-      <Icon src={logo} className={props.className} height={props.height}/>
+      <a href={'#'}>
+        <Icon src={logo} className={props.className} height={props.height}/>
+      </a>
   );
 };
 

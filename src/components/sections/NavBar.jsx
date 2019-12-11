@@ -10,11 +10,11 @@ import menuToggle from "../../events/menuToggle";
 
 const MobileNavBar = () => {
   return (
-    <div className="nav-bar">
+    <nav id="nav-bar">
       <Logo className="logo" height={2.5}/>
       <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>
-      <Icon src={toggle} className="toggle" height={2.25} width={5} onClick={e => menuToggle(e)}/>
-    </div>
+      <Icon src={toggle} className="toggle" height={2.25} width={2.25} onClick={e => menuToggle(e)}/>
+    </nav>
   );
 };
 

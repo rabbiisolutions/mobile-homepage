@@ -25,3 +25,50 @@ $navBarHeight: 3.75em;
 $webkitRadius : 10em;
 $borderRadius: 10em;
 $font16: 1em;
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Nunito", sans-serif;
+    width: 100%;
+}
+
+#nav-bar {
+    background-color: color(alto);
+    height: $navBarHeight;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        display: inline-block; // can't apply max width without inline-block or block
+        max-width: 90px; // propagate to all logos (avoids large width on IE)
+    }
+
+    button {
+        -webkit-border-radius: $webkitRadius;
+        border-radius: $borderRadius;
+        background-color: color(alto);
+        color: color(purple);
+        border: 0.2em solid color(purple);
+        padding: .5em 1.5em;
+        cursor: $pointer;
+        font-size: $font16;
+    }
+
+    .toggle span{
+        fill: color(mirage);
+        cursor: $pointer;
+    }
+}

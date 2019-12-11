@@ -18,9 +18,11 @@ class App extends Component {
     return (
         <Router>
           <MobileNavBar/>
-          <LandingImage/>
-          <TeeCha/>
-          <Sections/>
+          <main>
+            <LandingImage/>
+            <TeeCha/>
+            <Sections/>
+          </main>
           <Footer/>
           <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
           <SignUpModal className="sign-up modal hidden" signUpText={texts.signUpModalTitle}/>
