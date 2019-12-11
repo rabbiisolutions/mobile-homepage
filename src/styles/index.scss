@@ -139,7 +139,7 @@ header {
 }
 
 #teecha-areas {
-    margin: 2em 4vw 0;
+    margin: 7vw 4vw 0;
     background: color(concrete);
     border: 1px solid color(mirage25);
     border-radius: 5px;
@@ -248,7 +248,7 @@ header {
         color: color(deepSeaGreen);
         background-color: color(concrete);
         border: 1px solid color(silverSand);
-        padding: 10px 15px;
+        padding: 3vw 5vw;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -272,7 +272,7 @@ footer {
 
     #lighter {
         background: color(alto);
-        padding: 15px 5px;
+        padding: 4vw 2vw;
         color: color(mirage);
         fill: color(mirage);
 
@@ -280,31 +280,29 @@ footer {
             color: color(mirage64);
             text-align: center;
             font-size: 4.75vw;
-            margin: 15px 0;
+            margin: 6vw 0 3vw;
+            font-weight: 300;
         }
         #contacts {
             display: flex;
             flex-direction: column;
             justify-content: center;
             font-size: 4.5vw;
-            padding-left: 8vw;
+            padding-left: 13vw;
 
                 .icon-text {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    margin-bottom: 10px;
+                    margin-bottom: 2vw;
                 }
-        }
-
-        #links-title {
-            margin-top: 30px;
         }
 
         #links {
             display: flex;
             justify-content: center;
             font-size: 4.5vw;
+            margin-bottom: 4vw;
         }
 
         #links a {
@@ -333,17 +331,18 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 4.5vw;
         padding: 6vw 2vw;
         background: color(nobel);
 
         a {
             color: color(mirage);
+            font-size: 4.5vw;
         }
 
         .copyright {
             margin-top: 4vw;
             color: color(mirage64);
+            font-size: 3.5vw;
         }
     }
 }

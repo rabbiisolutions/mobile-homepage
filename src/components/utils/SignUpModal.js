@@ -26,7 +26,7 @@ const SignUpModal = (props) => {
             <ButtonLink link="https://forms.gle/CmgUyZCWrnLgsqnC9" className="tutors-btn" value="Skills Tutor"/>
           </div>
         </section>
-        <div className="msg">If you face difficulty in registering call, text or whatsapp on 0772 915 361</div>
+        <div className="msg">If you face difficulty in registering call, text or WhatsApp on 0772 915 361</div>
       </div>
   );
 };
