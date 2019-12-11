@@ -17,41 +17,41 @@ const Footer = () => {
           <div id="contacts-title">{texts.contacts}</div>
           <div id="contacts">
               <span className="icon-text">
-                <Icon src={phone} className="footer-icon" height={2.5} width={2.5}/>
-                <span>{texts.safaricom}</span>
-              </span>
-              <span className="icon-text">
-                <Icon src={whatsapp} className="footer-icon" height={2.5} width={2.5}/>
+                <Icon src={phone} className="footer-icon" height={15} width={15} units={'vw'}/>
                 <span>{texts.telkom}</span>
               </span>
               <span className="icon-text">
-                <Icon src={mail} className="footer-icon" height={3} width={2.5}/>
+                <Icon src={whatsapp} className="footer-icon" height={15} width={15} units={'vw'}/>
+                <span>{texts.safaricom}</span>
+              </span>
+              <span className="icon-text">
+                <Icon src={mail} className="footer-icon" height={15} width={15} units={'vw'}/>
                 <span>{texts.sema}</span>
               </span>
           </div>
           <div id="find-us-title">{texts.findUs}</div>
           <div id="social">
             <a href="https://www.facebook.com/rabbiitech/" target="_blank" rel="noopener noreferrer">
-              <Icon src={facebook} className="footer-icon" height={2.5} width={2.5}/>
+              <Icon src={facebook} className="footer-icon" height={15} width={15} units={'vw'}/>
             </a>
             <a href="https://www.youtube.com/channel/UC5dpUzgKA46Iuh8r9ni1Syg" target="_blank" rel="noopener noreferrer">
-              <Icon src={youtube} className="footer-icon" height={2.5} width={2.5}/>
+              <Icon src={youtube} className="footer-icon" height={15} width={15} units={'vw'}/>
             </a>
             <a href="https://twitter.com/RabbiiTech" target="_blank" rel="noopener noreferrer">
-              <Icon src={twitter} className="footer-icon" height={2.5} width={2.5}/>
+              <Icon src={twitter} className="footer-icon" height={15} width={15} units={'vw'}/>
             </a>
             <a href="https://www.linkedin.com/company/Rabbii-technology-innovations-ltd/" target="_blank" rel="noopener noreferrer">
-              <Icon src={linkedin} className="footer-icon" height={2.5} width={2.5}/>
+              <Icon src={linkedin} className="footer-icon" height={15} width={15} units={'vw'}/>
             </a>
           </div>
           <div id="links-title">Links</div>
           <div id={'links'}>
-            <a href={'https://privacy.rabbii.co.ke'}>Privacy Policy</a>
+            <a href={'https://faqs.rabbii.co.ke'}>{texts.dot}FAQs</a>
           </div>
         </div>
         <div id="darken">
-          <span className="copyright">&copy;&nbsp;{new Date().getFullYear()}&nbsp;Copyright:&nbsp;</span>
-          <span className="company">&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;®&nbsp;</span>
+          <a href={'https://privacy.rabbii.co.ke'}>Privacy Policy</a>
+          <span className="copyright">&copy;&nbsp;Rabbii&nbsp;Technology&nbsp;Solutions&nbsp;{new Date().getFullYear()}</span>
         </div>
       </footer>
   );

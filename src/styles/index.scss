@@ -144,12 +144,19 @@ header {
     border: 1px solid color(mirage25);
     border-radius: 5px;
     padding: 4vw 4vw 2vw 4vw;
+    width: 82%;
 
     #home-tuition-areas-title {
         font-weight: bold;
         text-align: center;
         font-size: 3.75vw;
-        margin-bottom: 2vw;
+        margin-bottom: 6vw;
+    }
+
+    #home-tuition-areas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #home-tuition-info {
@@ -161,15 +168,13 @@ header {
 }
 
 .teecha-collapse {
-    width: 100%;
+    width: 86%;
     border-bottom: 1px solid color(mirage25);
     margin-bottom: 1vw;
 
     .section-toggle {
-        //width: inherit;
         color: color(deepSeaGreen);
         padding: 5px 10px;
-        //font-size: .85rem;
         font-size: 4.5vw;
         display: flex;
         align-items: center;
@@ -199,7 +204,6 @@ header {
 .services {
     padding: .5em 1.5em;
     display: inline-block;
-    //margin: 4vw 0;
     border: 2px solid color(curiosBlue);
     background-color: color(white);
     color: color(curiosBlue);
@@ -217,13 +221,13 @@ header {
 }
 
 #catalogue {
-    margin: 3.5vw;
+    margin: 9vw 0 6vw;
     display: flex;
     justify-content: center;
 }
 
 #tuition-jobs {
-    margin: 5.875rem 0;
+    margin: 5.785rem 0;
 }
 
 #sections {
@@ -238,14 +242,12 @@ header {
 
 .sections-accordion {
     color: color(white);
-    //font-size: 1.25em;
     padding: 1.5vw 3vw;
 
     .section-toggle {
         color: color(deepSeaGreen);
         background-color: color(concrete);
         border: 1px solid color(silverSand);
-        //width: 100%;
         padding: 10px 15px;
         display: flex;
         align-items: center;
@@ -255,10 +257,102 @@ header {
     }
 
     .section-toggle.shown, .section-toggle:hover {
-        //background: color(curiosBlue);
+        color: color(curiosBlue);
+        cursor: $pointer;
+        border-color: color(curiosBlue);
     }
 
     .panel {
         padding: 1px 7px;
     }
+}
+
+footer {
+    margin-top: 5.875rem;
+
+    #lighter {
+        background: color(alto);
+        padding: 15px 5px;
+        color: color(mirage);
+        fill: color(mirage);
+
+        #contacts-title, #find-us-title, #links-title {
+            color: color(mirage64);
+            text-align: center;
+            font-size: 4.75vw;
+            margin: 15px 0;
+        }
+        #contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 4.5vw;
+            padding-left: 8vw;
+
+                .icon-text {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+        }
+
+        #links-title {
+            margin-top: 30px;
+        }
+
+        #links {
+            display: flex;
+            justify-content: center;
+            font-size: 4.5vw;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: color(mirage);
+        }
+        #links a:hover {
+            color: color(curiosBlue);
+            text-decoration: underline;
+        }
+
+        #social {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icon {
+            margin-right: 4vw;
+        }
+    }
+
+    #darken {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 4.5vw;
+        padding: 6vw 2vw;
+        background: color(nobel);
+
+        a {
+            color: color(mirage);
+        }
+
+        .copyright {
+            margin-top: 4vw;
+            color: color(mirage64);
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: color(curiosBlue);
+    text-decoration: underline;
 }
