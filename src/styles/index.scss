@@ -496,7 +496,7 @@ a:hover {
     }
 }
 
-.featured-bg, .reviews {
+.featured-bg, .reviews, .canvas {
     background-color: color(concrete);
     margin: 4vw 2vw 0;
 }
@@ -554,5 +554,97 @@ a:hover {
         font-size: 3.5vw;
         font-weight: 300;
         display: block;
+    }
+}
+
+.how-teecha-works {
+    padding: 3vw 2vw;
+    font-weight: 300;
+    font-size: 4vw;
+    color: color(mirage);
+
+    .columns {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .flow-line span svg, .down-arrow span svg, .left-arrow span svg, .right-arrow span svg {
+                fill: color(mirage);
+                color: color(mirage);
+            }
+        }
+        .mid-col {
+            justify-content: normal;
+            align-items: center;
+
+            #plane {
+                display: flex;
+                flex-direction: column;
+                margin-top: 82vw;
+
+                .mid {
+                  margin-left: 3vw;
+                }
+                .end {
+                    margin-left: 11.5vw;
+                }
+            }
+
+            #pen {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 63vw;
+
+                .mid {
+                    margin-left: 3vw;
+                }
+                .end {
+                    margin-left: 14vw;
+                }
+            }
+        }
+    }
+
+    .titles, .start-arrow {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titles {
+        padding: 0 3vw 0 0;
+    }
+
+    .start-arrow {
+        padding: 0 5vw 0 1vw;
+    }
+
+    .user-title {
+        margin-bottom: 10px;
+        color: color(mirage);
+    }
+}
+
+.circle-widget {
+    .circle-icon {
+        width: 21vw;
+        height: 20vw;
+        border-radius: 50%;
+        border: 1px solid #888D94;
+        line-height: 20vw;
+        text-align: center;
+        fill: color(mirage);
+        color: color(mirage);
+        svg {
+            margin-top: 4vw;
+        }
+    }
+    .text {
+        text-align: center;
+        max-width: 24vw;
     }
 }

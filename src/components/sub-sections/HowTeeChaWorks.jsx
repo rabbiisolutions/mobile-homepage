@@ -9,46 +9,69 @@ import placement from "../../icons/teecha/recruitment.svg"
 import start from "../../icons/teecha/start-line.svg"
 import evaluation from "../../icons/teecha/evaluation.svg"
 import counselling from "../../icons/teecha/mentor.svg"
-import right from "../../icons/teecha/fa-solid_long-arrow-alt-downright-small.svg"
-import left from "../../icons/teecha/fa-solid_long-arrow-alt-downleft-small.svg"
+import plane1 from "../../icons/teecha/Line 18plane.svg"
+import plane2 from "../../icons/teecha/Groupplane.svg"
+import plane3 from "../../icons/teecha/Line 17plane.svg"
+import pen1 from "../../icons/teecha/Arrow 36pen.svg"
+import pen2 from "../../icons/teecha/Vectorpen.svg"
+import pen3 from "../../icons/teecha/Line 19pen.svg"
 import dotted from "../../icons/teecha/Arrow 13dotted-small.svg"
+import tutorStart from "../../icons/teecha/Arrow 32tutor-start.svg"
+import clientStart from "../../icons/teecha/Arrow 31client-start.svg"
 import Icon from "../utils/icon";
-import DownArrow from "../utils/DownArrow";
+import DownArrow from "../utils/DownArrow.jsx";
+import FLowLine from "../utils/FlowLine";
 import React from "react";
 
 const HowTeeChaWorks = () => {
   return (
       <section className={'how-teecha-works'}>
-        <section className={'tutor-col col'}>
-          <div className={'user-title tutor-title'}>Tutor</div>
-          <CircleWidget src={signup} text={'Tutor Sign Up'}/>
-          <DownArrow/>
-          <CircleWidget src={proInfo} text={'Give Professional Info'}/>
-          <DownArrow/>
-          <CircleWidget src={screen} text={'Screen Tutor'}/>
-          <DownArrow/>
-          <CircleWidget src={verification} text={'Tutor Verification'}/>
-          <DownArrow/>
-          <CircleWidget src={placement} text={'Tutor Placement'}/>
-          <DownArrow/>
-          <CircleWidget src={evaluation} text={'Tutor Evaluation & Management'}/>
-        </section>
-        <section className={'mid-col col'}>
-          <Icon src={left} width={4.25} height={1} className={'left-arrow'}/>
-          <Icon src={right} width={4.25} height={1} className={'right-arrow'}/>
-        </section>
-        <section className={'client-col col'}>
-          <div className={'user-title client-title'}>Client</div>
-          <CircleWidget src={signup} text={'Client Sign Up'}/>
-          <DownArrow/>
-          <CircleWidget src={studInfo} text={'Give Student Client Info'}/>
-          <DownArrow/>
-          <CircleWidget src={gets} text={'Gets Tutor'}/>
-          <Icon src={dotted} width={1.25} height={12.5} className={'dotted-arrow'}/>
-          <CircleWidget src={start} text={'Session Begins'}/>
-          <DownArrow/>
-          <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>
-        </section>
+        <div className={'titles'}>
+          <div className={'user-title'}>tutor</div>
+          <div className={'user-title'}>client</div>
+        </div>
+        <div className={'start-arrow'}>
+          <Icon src={tutorStart} width={16} height={5} units={'vw'}/>
+          <Icon src={clientStart} width={16} height={5} units={'vw'}/>
+        </div>
+        <div className={'columns'}>
+          <section className={'tutor-col col'}>
+            <CircleWidget src={signup} text={'Tutor Sign Up'}/>
+            <FLowLine/>
+            <CircleWidget src={proInfo} text={'Give Professional Info'}/>
+            <FLowLine/>
+            <CircleWidget src={screen} text={'Screen Tutor'}/>
+            <FLowLine/>
+            <CircleWidget src={verification} text={'Tutor Verification'}/>
+            <FLowLine/>
+            <CircleWidget src={placement} text={'Tutor Placement'}/>
+            <DownArrow/>
+            <CircleWidget src={evaluation} text={'Tutor Evaluation & Management'}/>
+          </section>
+          <section className={'mid-col col'}>
+            <div id={'plane'}>
+              <Icon src={plane1} width={8} height={5} units={'vw'} className={'start'}/>
+              <Icon src={plane2} width={16} height={5} units={'vw'} className={'mid'}/>
+              <Icon src={plane3} width={8} height={5} units={'vw'} className={'end'}/>
+            </div>
+            <div id={'pen'}>
+              <Icon src={pen1} width={8} height={5} units={'vw'} className={'start'}/>
+              <Icon src={pen2} width={16} height={5} units={'vw'} className={'mid'}/>
+              <Icon src={pen3} width={8} height={5} units={'vw'} className={'end'}/>
+            </div>
+          </section>
+          <section className={'client-col col'}>
+            <CircleWidget src={signup} text={'Client Sign Up'}/>
+            <FLowLine/>
+            <CircleWidget src={studInfo} text={'Give Student Client Info'}/>
+            <DownArrow/>
+            <CircleWidget src={gets} text={'Gets Tutor'}/>
+            <Icon src={dotted} width={5} height={49} units={'vw'} className={'dotted-arrow'}/>
+            <CircleWidget src={start} text={'Session Begins'}/>
+            <DownArrow/>
+            <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>
+          </section>
+        </div>
       </section>
   );
 };

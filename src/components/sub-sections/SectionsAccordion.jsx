@@ -14,7 +14,7 @@ const SectionsAccordion = () => {
         <div className={name} key={'c1'}>
           {Accordion.toggle(texts.howTeeChaWorks)}
           {
-            Accordion.panel(HowTeeChaWorks())
+            Accordion.panel(HowTeeChaWorks(), 'canvas')
           }
         </div>
         ,
