@@ -62,7 +62,7 @@ body {
         border-radius: $borderRadius;
         background-color: color(alto);
         color: color(purple);
-        border: 0.2em solid color(purple);
+        border: 1px solid color(purple);
         padding: .5em 1.5em;
         cursor: $pointer;
         font-size: $font16;
@@ -433,7 +433,7 @@ a:hover {
         padding: .45rem 1.2rem;
         display: inline-block;
         margin: 2vw;
-        border: 0.2em solid color(curiosBlue);
+        border: 1px solid color(curiosBlue);
         background-color: color(white);
         color: color(curiosBlue);
         font-size: .9em;
@@ -585,7 +585,7 @@ a:hover {
             #plane {
                 display: flex;
                 flex-direction: column;
-                margin-top: 82vw;
+                margin-top: 76vw;
 
                 .mid {
                   margin-left: 3vw;
@@ -598,7 +598,7 @@ a:hover {
             #pen {
                 display: flex;
                 flex-direction: column-reverse;
-                margin-top: 63vw;
+                margin-top: 56vw;
 
                 .mid {
                     margin-left: 3vw;

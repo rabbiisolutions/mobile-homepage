@@ -38,7 +38,7 @@ const HowTeeChaWorks = () => {
           <section className={'tutor-col col'}>
             <CircleWidget src={signup} text={'Tutor Sign Up'}/>
             <FLowLine/>
-            <CircleWidget src={proInfo} text={'Give Professional Info'}/>
+            <CircleWidget src={proInfo} text={'Professional Info Given'}/>
             <FLowLine/>
             <CircleWidget src={screen} text={'Screen Tutor'}/>
             <FLowLine/>
@@ -63,10 +63,10 @@ const HowTeeChaWorks = () => {
           <section className={'client-col col'}>
             <CircleWidget src={signup} text={'Client Sign Up'}/>
             <FLowLine/>
-            <CircleWidget src={studInfo} text={'Give Student Client Info'}/>
+            <CircleWidget src={studInfo} text={'Give Client Student Info'}/>
             <DownArrow/>
             <CircleWidget src={gets} text={'Gets Tutor'}/>
-            <Icon src={dotted} width={5} height={49} units={'vw'} className={'dotted-arrow'}/>
+            <Icon src={dotted} width={5} height={43} units={'vw'} className={'dotted-arrow'}/>
             <CircleWidget src={start} text={'Session Begins'}/>
             <DownArrow/>
             <CircleWidget src={counselling} text={'Mentoring & Counselling'}/>
