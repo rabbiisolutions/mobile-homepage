@@ -26,7 +26,7 @@ const Footer = () => {
               </span>
               <span className="icon-text">
                 <Icon src={mail} className="footer-icon" height={12} width={12} units={'vw'}/>
-                <span>{texts.sema}</span>
+                <span><a href={'mailto:'+ texts.sema}>{texts.sema}</a></span>
               </span>
           </div>
           <div id="find-us-title">{texts.findUs}</div>
