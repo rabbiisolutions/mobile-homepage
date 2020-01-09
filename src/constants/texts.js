@@ -1,4 +1,4 @@
-const slogan = 'We Believe Knowledge is Power';
+const tagLine = 'Partnering with you to achieve your dream!';
 const teeCha = 'TeeCha';
 const homeTuition = '* Free Home Tuition';
 const homeTuitionAreas = 'Home Tuition Areas';
@@ -29,7 +29,7 @@ const hidden = 'hidden';
 
 
 const texts = {
-  slogan: slogan, teeCha: teeCha, homeTuition: homeTuition, homeTuitionAreas: homeTuitionAreas,
+  tagLine: tagLine, teeCha: teeCha, homeTuition: homeTuition, homeTuitionAreas: homeTuitionAreas,
   academics: academics, homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   reviews: reviews, featuredTutors: featuredTutors, trending: trending, faceBook: faceBook,
   twitter: twitter, dot: dot, turquoise: turquoise, grey: grey, black: blue,
