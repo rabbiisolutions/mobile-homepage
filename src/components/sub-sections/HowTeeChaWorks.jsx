@@ -1,4 +1,4 @@
-import Icon from "../utils/icon";
+import Icon from "../basic/icon";
 import howToGetATutor from "../../icons/how-to-get-a-tutor.svg"
 import React from "react";
 

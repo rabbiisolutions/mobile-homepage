@@ -1,6 +1,6 @@
 import React from "react";
 import texts from "../../constants/texts";
-import Accordion from "../utils/Accordion";
+import Accordion from "../basic/Accordion";
 import HowTeeChaWorks from "./HowTeeChaWorks";
 import Reviews from "./Reviews";
 

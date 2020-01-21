@@ -7,7 +7,7 @@ import TeeCha from "./components/sections/TeeCha";
 import Sections from "./components/sections/Sections";
 import Footer from "./components/sections/Footer";
 // utilities
-import SignUpModal from "./components/utils/SignUpModal";
+import SignUpModal from "./components/composite/SignUpModal";
 import backDropHandler from "./events/backDrop";
 import SideBar from "./components/sections/SideBar.jsx";
 // text constants

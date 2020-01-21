@@ -1,6 +1,6 @@
 import clientReviews from "../../constants/reviews";
-import Review from "../sub-items/Review";
-import Accordion from "../utils/Accordion";
+import Review from "../composite/Review";
+import Accordion from "../basic/Accordion";
 
 
 const Reviews = () => {

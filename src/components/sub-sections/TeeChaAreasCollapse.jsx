@@ -1,4 +1,4 @@
-import Accordion from "../utils/Accordion";
+import Accordion from "../basic/Accordion";
 import texts from "../../constants/texts";
 import React from "react";
 import KCSE from "./services/KCSE";

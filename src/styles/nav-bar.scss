@@ -25,6 +25,7 @@ $font16: 1em;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    z-index: 5;
 
     .logo {
         display: inline-block; // can't apply max width without inline-block or block

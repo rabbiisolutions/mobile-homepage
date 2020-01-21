@@ -1,5 +1,5 @@
 import React from "react";
-import Icon from "../utils/icon";
+import Icon from "../basic/icon";
 import phone from "../../icons/contacts/ic_round-perm-phone-msgphone.svg"
 import whatsapp from "../../icons/contacts/bx_bxl-whatsappwhatsapp.svg"
 import mail from "../../icons/contacts/bx_bx-mail-sendmail.svg"

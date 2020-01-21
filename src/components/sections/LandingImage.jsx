@@ -13,7 +13,7 @@ import ImageWebp from "../../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../../constants/texts";
 import signUpHandler from "../../events/signUpModal";
-import Button from "../utils/button";
+import Button from "../basic/button";
 
 const images = [
   {jpeg: pilotJpeg, webp: pilotWebp},
@@ -27,7 +27,7 @@ const zoomOutProperties = {
   duration: 3000,
   transitionDuration: 500,
   infinite: true,
-  indicators: true,
+  indicators: false,
   scale: 0.4,
   arrows: true
 };
@@ -35,17 +35,19 @@ const zoomOutProperties = {
 
 const Landing = () => {
   return (
-      <div className="slide-container" id={'start'}>
+      <section className="slide-container" id={'start'}>
         <Zoom {...zoomOutProperties}>
           {
             images.map((each, index) => <ImageWebp key={index} style={{width: "100%"}} src={each.jpeg} srcWebp={each.webp} className={'slide-image'}/>)
           }
         </Zoom>
-        <h2>achieve your potential</h2>
-        <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
-        <p>Sign up to see our price list.</p>
-        <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
-      </div>
+        <div id={'greeting'}>
+          <h2>achieve your potential</h2>
+          <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
+          <p>Sign up to see our price list.</p>
+          <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
+        </div>
+      </section>
   )
 };
 export default Landing;
