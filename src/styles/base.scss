@@ -71,8 +71,16 @@ main {
     display: none;
 }
 
+.get-a-tutor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vw 0;
+}
+
 a {
     text-decoration: none;
+    color: color(mirage);
 }
 
 a:hover {

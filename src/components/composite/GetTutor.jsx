@@ -1,0 +1,12 @@
+import React from "react";
+import ButtonLink from "../basic/ButtonLink";
+
+const GetTutor = () => {
+  return (
+      <div className={'get-a-tutor'}>
+        <ButtonLink link="https://tuition-jobs.rabbii.co.ke/" className="services" value="Get a Tutor"/>
+      </div>
+  )
+};
+
+export default GetTutor;
