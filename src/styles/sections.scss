@@ -22,6 +22,7 @@ $colors: (
 }
 
 #sections {
+    margin-top: 5rem;
     #sections-lead {
         color: color(mirage80);
         font-size: 3vw;
@@ -37,7 +38,7 @@ $colors: (
 
     .section-toggle {
         color: color(deepSeaGreen);
-        background-color: color(concrete);
+        background-color: color(alabaster);
         border: 1px solid color(silverSand);
         padding: 3vw 5vw;
         display: flex;
