@@ -4,7 +4,7 @@ import ButtonLink from "../basic/ButtonLink";
 const GetTutor = () => {
   return (
       <div className={'get-a-tutor'}>
-        <ButtonLink link="https://tuition-jobs.rabbii.co.ke/" className="services" value="Get a Tutor"/>
+        <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="services" value="Get a Tutor"/>
       </div>
   )
 };

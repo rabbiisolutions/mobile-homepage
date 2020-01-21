@@ -1,6 +1,7 @@
 import React from "react";
 import teeChaAreasLists from "../../../constants/teecha_areas_lists";
 import services from "../../../constants/services";
+import GetTutor from "../../composite/GetTutor";
 
 const Language = () => {
   return (
@@ -8,6 +9,7 @@ const Language = () => {
         <p>{services.language[0]}</p>
         <p>{services.language[1]}</p>
         {teeChaAreasLists.language}
+        <GetTutor/>
       </div>
   )
 };
