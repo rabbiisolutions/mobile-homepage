@@ -12,6 +12,8 @@ import photographyWebp from "../../images/carousel/5.webp";
 import ImageWebp from "../../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../../constants/texts";
+import signUpHandler from "../../events/signUpModal";
+import Button from "../utils/button";
 
 const images = [
   {jpeg: pilotJpeg, webp: pilotWebp},
@@ -39,7 +41,10 @@ const Landing = () => {
             images.map((each, index) => <ImageWebp key={index} style={{width: "100%"}} src={each.jpeg} srcWebp={each.webp} className={'slide-image'}/>)
           }
         </Zoom>
-        <div id={'vision'}>{texts.tagLine}</div>
+        <h2>achieve your potential</h2>
+        <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
+        <p>Sign up to see our price list.</p>
+        <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
       </div>
   )
 };

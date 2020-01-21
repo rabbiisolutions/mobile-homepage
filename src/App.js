@@ -9,7 +9,7 @@ import Footer from "./components/sections/Footer";
 // utilities
 import SignUpModal from "./components/utils/SignUpModal";
 import backDropHandler from "./events/backDrop";
-import SideBar from "./components/sections/sideBar";
+import SideBar from "./components/sections/SideBar.jsx";
 // text constants
 import texts from "./constants/texts";
 
