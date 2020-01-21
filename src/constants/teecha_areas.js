@@ -23,7 +23,7 @@ const teeChaAreas = {
   ],
   specialNeeds: [
     {key: 'f4', text: 'Physical'}, {key: 'f5', text: 'Developmental'},
-    {key: 'f6', text: 'Behavioural/emotional'}, {key: 'f7', text: 'Sensory/Impaired'}
+    {key: 'f6', text: 'Behavioural/Emotional'}, {key: 'f7', text: 'Sensory/Impaired'}
   ]
 };
 

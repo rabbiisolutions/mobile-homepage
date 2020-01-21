@@ -6,7 +6,7 @@ const TeeCha = () => {
   return (
       <section id={'teecha'}>
         <div id="teecha-areas">
-          <div id="home-tuition-areas-title">our services</div>
+          <div id="services-title">our services</div>
           <div id="home-tuition-areas">
             {teeChaAreasCollapse()}
           </div>
