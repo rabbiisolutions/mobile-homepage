@@ -1,33 +1,57 @@
 import Accordion from "../utils/Accordion";
 import texts from "../../constants/texts";
-import teeChaAreasLists from "../../constants/TeeChaAreasLists";
 import React from "react";
+import KCSE from "./services/KCSE";
+import Inter from "./services/International";
+import Sports from "./services/Sports";
+import Language from "./services/Language";
+import Hobbies from "./services/Hobbies";
+import SpecialNeeds from "./services/SpecialNeeds";
 
 const name = 'teecha-collapse';
-
-const skills_areas = (
-    <div>
-      <div className="sub-category">Foreign Languages</div>
-      {teeChaAreasLists.fl}
-      <div className="sub-category">Games & Sports</div>
-      {teeChaAreasLists.gs}
-    </div>
-);
 
 const teeChaAreasCollapse = () => {
   const collapses = [];
   collapses.push(
       <div className={name} key={11}>
-        {Accordion.toggle('1. ' + texts.academic)}
+        {Accordion.toggle('1. ' + texts.services[0])}
         {
-          Accordion.panel(teeChaAreasLists.academics, 'areas-bg')
+          Accordion.panel(<KCSE/>, 'areas-bg')
         }
       </div>
       ,
       <div className={name} key={12}>
-        {Accordion.toggle('2. ' + texts.skills)}
+        {Accordion.toggle('2. ' + texts.services[1])}
         {
-          Accordion.panel(skills_areas, 'areas-bg', 'skills')
+          Accordion.panel(<Inter/>, 'areas-bg', 'skills')
+        }
+      </div>
+      ,
+      <div className={name} key={12}>
+        {Accordion.toggle('3. ' + texts.services[2])}
+        {
+          Accordion.panel(<Sports/>, 'areas-bg', 'skills')
+        }
+      </div>
+      ,
+      <div className={name} key={12}>
+        {Accordion.toggle('4. ' + texts.services[3])}
+        {
+          Accordion.panel(<Language/>, 'areas-bg', 'skills')
+        }
+      </div>
+      ,
+      <div className={name} key={12}>
+        {Accordion.toggle('5. ' + texts.services[4])}
+        {
+          Accordion.panel(<Hobbies/>, 'areas-bg', 'skills')
+        }
+      </div>
+      ,
+      <div className={name} key={12}>
+        {Accordion.toggle('6. ' + texts.services[5])}
+        {
+          Accordion.panel(<SpecialNeeds/>, 'areas-bg', 'skills')
         }
       </div>
   );

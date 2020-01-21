@@ -26,6 +26,8 @@ const sema = 'sema@rabbii.co.ke';
 const menuTitle = 'Menu';
 const menuItems = ['Home', 'Our Services', 'Tuition Jobs', 'About Us', 'Trending'];
 const hidden = 'hidden';
+const services = ['Pass KCPE/KCSE', 'Tutors for International School Systems', 'Learn New Sports' +
+' Games', 'Speak a Foreign Language', 'Developing your Hobbies and Interests', 'Special Needs'];
 
 
 const texts = {
@@ -35,7 +37,7 @@ const texts = {
   twitter: twitter, dot: dot, turquoise: turquoise, grey: grey, black: blue,
   signUp: signUp, contacts: contacts, findUs: findUs, signUpModalTitle: signUpModalTitle,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
-  menuItems: menuItems, hidden: hidden, academic: academic, skills: skills
+  menuItems: menuItems, hidden: hidden, academic: academic, skills: skills, services: services
 };
 
 export default texts;
