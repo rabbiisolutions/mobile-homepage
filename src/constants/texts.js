@@ -18,8 +18,8 @@ const grey = 's-grey';
 const blue = 'blue';
 const signUp = 'Sign Up';
 const signUpModalTitle = 'sign up to receive our price list';
-const contacts = 'Contacts';
-const findUs = 'Find Us On';
+const talkToUs = 'Talk to us';
+const connect = 'Connect';
 const safaricom = '0798 884 419';
 const telkom = '0772 915 361';
 const sema = 'sema@rabbii.co.ke';
@@ -35,7 +35,7 @@ const texts = {
   academics: academics, homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   reviews: reviews, featuredTutors: featuredTutors, trending: trending, faceBook: faceBook,
   twitter: twitter, dot: dot, turquoise: turquoise, grey: grey, black: blue,
-  signUp: signUp, contacts: contacts, findUs: findUs, signUpModalTitle: signUpModalTitle,
+  signUp: signUp, talkToUs: talkToUs, connect: connect, signUpModalTitle: signUpModalTitle,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
   menuItems: menuItems, hidden: hidden, academic: academic, skills: skills, services: services
 };

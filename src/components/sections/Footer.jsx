@@ -14,7 +14,7 @@ const Footer = () => {
   return (
       <footer>
         <div id="lighter">
-          <div id="contacts-title">{texts.contacts}</div>
+          <div id="contacts-title">{texts.talkToUs}</div>
           <div id="contacts">
               <span className="icon-text">
                 <Icon src={phone} className="footer-icon" height={9} width={9} units={'vw'}/>
@@ -29,7 +29,7 @@ const Footer = () => {
                 <span><a href={'mailto:'+ texts.sema}>{texts.sema}</a></span>
               </span>
           </div>
-          <div id="find-us-title">{texts.findUs}</div>
+          <div id="find-us-title">{texts.connect}</div>
           <div id="social">
             <a href="https://www.facebook.com/rabbiitech/" target="_blank" rel="noopener noreferrer">
               <Icon src={facebook} className="footer-icon" height={12} width={12} units={'vw'}/>
