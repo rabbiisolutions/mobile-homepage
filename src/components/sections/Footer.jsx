@@ -17,15 +17,15 @@ const Footer = () => {
           <div id="contacts-title">{texts.contacts}</div>
           <div id="contacts">
               <span className="icon-text">
-                <Icon src={phone} className="footer-icon" height={12} width={12} units={'vw'}/>
+                <Icon src={phone} className="footer-icon" height={9} width={9} units={'vw'}/>
                 <span>{texts.safaricom}</span>
               </span>
               <span className="icon-text">
-                <Icon src={whatsapp} className="footer-icon" height={12} width={12} units={'vw'}/>
+                <Icon src={whatsapp} className="footer-icon" height={9} width={9} units={'vw'}/>
                 <span>{texts.telkom}</span>
               </span>
               <span className="icon-text">
-                <Icon src={mail} className="footer-icon" height={12} width={12} units={'vw'}/>
+                <Icon src={mail} className="footer-icon" height={9} width={9} units={'vw'}/>
                 <span><a href={'mailto:'+ texts.sema}>{texts.sema}</a></span>
               </span>
           </div>
@@ -43,10 +43,6 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/Rabbii-technology-innovations-ltd/" target="_blank" rel="noopener noreferrer">
               <Icon src={linkedin} className="footer-icon" height={12} width={12} units={'vw'}/>
             </a>
-          </div>
-          <div id="links-title">Links</div>
-          <div id={'links'}>
-            <a href={'https://faqs.rabbii.co.ke'}>FAQs</a>
           </div>
         </div>
         <div id="darken">
