@@ -1,0 +1,21 @@
+.slide-container {
+    width: 96%;
+    margin: auto;
+
+    #vision {
+        position: static;
+        color: #1B2531;
+        text-align: center;
+        background-color: #ECECEC;
+        padding: 2vw;
+        font-weight: bold;
+        font-size: 3.75vw;
+        width: 80%;
+        margin: auto;
+    }
+
+    .slide-image {
+        width: 100%;
+        height: auto;
+    }
+}

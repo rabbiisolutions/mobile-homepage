@@ -1,0 +1,121 @@
+$colors: (
+    // navBar
+        alto: #D3D3D3, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25),
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+$pointer: pointer;
+
+#teecha {
+    margin-top: 5.875rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #title {
+        letter-spacing: 0.05em;
+        color: color(curiosBlue);
+        -webkit-text-stroke: 1px color(mirage);
+        font-weight: bold;
+        font-size: 9vw;
+    }
+    #caption {
+        font-weight: 600;
+        font-size: 4.5vw;
+        text-decoration: none;
+        color: color(mirage);
+    }
+    #caption:hover {
+        text-decoration: underline;
+        color: color(curiosBlue);
+    }
+}
+
+#teecha-areas {
+    margin: 7vw 4vw 0;
+    background: color(concrete);
+    border: 1px solid color(mirage25);
+    border-radius: 5px;
+    padding: 4vw 4vw 2vw 4vw;
+    width: 82%;
+
+    #home-tuition-areas-title {
+        font-weight: bold;
+        text-align: center;
+        font-size: 3.75vw;
+        margin-bottom: 6vw;
+    }
+
+    #home-tuition-areas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home-tuition-info {
+        font-weight: 300;
+        font-size: 3vw;
+        color: color(mirage90);
+        text-align: center;
+    }
+}
+
+.teecha-collapse {
+    width: 86%;
+    border-bottom: 1px solid color(mirage25);
+    margin-bottom: 1vw;
+
+    .section-toggle {
+        color: color(deepSeaGreen);
+        padding: 5px 10px;
+        font-size: 4.5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: $pointer;
+    }
+
+    .section-toggle:hover {
+        color: color(curiosBlue);
+        fill: color(curiosBlue);
+    }
+
+    .sub-category {
+        font-size: 3.75vw;
+        text-align: center;
+    }
+
+    ul {
+        margin: 1.5vw 0 3vw;
+    }
+}
+
+.panel li {
+    color: color(mirage);
+    font-size: 3.5vw;
+    font-weight: 300;
+    display: inline-block;
+    margin-right: 4vw;
+}
+
+.areas-bg {
+    padding-top: 2vw;
+    background-color: color(white);
+}

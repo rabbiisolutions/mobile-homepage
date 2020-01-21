@@ -1,0 +1,55 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+#sections {
+    #sections-lead {
+        color: color(mirage80);
+        font-size: 3vw;
+        text-align: center;
+        font-weight: 300;
+        margin: 1.5em;
+    }
+}
+
+.sections-accordion {
+    color: color(white);
+    padding: 1.5vw 3vw;
+
+    .section-toggle {
+        color: color(deepSeaGreen);
+        background-color: color(concrete);
+        border: 1px solid color(silverSand);
+        padding: 3vw 5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 5px;
+        font-size: 4.25vw;
+    }
+
+    .section-toggle.shown, .section-toggle:hover {
+        color: color(curiosBlue);
+        cursor: pointer;
+        border-color: color(curiosBlue);
+    }
+}

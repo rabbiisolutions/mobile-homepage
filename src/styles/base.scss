@@ -1,0 +1,159 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+$navBarHeight: 3.5em;
+$pointer: pointer;
+$webkitRadius : 10em;
+$borderRadius: 10em;
+$font16: 1em;
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Nunito", sans-serif;
+    width: 100%;
+}
+
+main {
+    margin-top: $navBarHeight;
+    padding-top: 2vw;
+}
+
+.btn-link {
+    -webkit-border-radius: $webkitRadius;
+    border-radius: $borderRadius;
+    cursor: $pointer;
+    text-decoration: none;
+    font-size: 4vw;
+}
+
+.services {
+    padding: .5em 1.5em;
+    display: inline-block;
+    border: 2px solid color(curiosBlue);
+    background-color: color(white);
+    color: color(curiosBlue);
+    text-align: center;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.hidden {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: color(curiosBlue);
+    text-decoration: underline;
+}
+
+.page-mask {
+    background: color(mirage64);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.featured-bg, .reviews, .canvas {
+    background-color: color(concrete);
+    margin: 4vw 2vw 0;
+}
+
+.featured, .review {
+    padding: 4vw;
+    border: 1px solid;
+    margin: 8vw 3vw 12vw;
+    text-align: center;
+
+    .featured-tutor, .reviewer {
+        color: color(mirage);
+        font-weight: 600;
+        font-size: 3.75vw;
+    }
+
+    .tutor-description {
+        color: color(mirage74);
+        margin-top: 2.5vw;
+        font-size: 3.5vw;
+        font-weight: 600;
+    }
+
+    .stars {
+        margin: 3vw 0;
+
+        .blue span {
+            color: color(oldGold);
+        }
+
+        .s-grey span {
+            color: color(silver);
+        }
+
+        .star {
+            margin-right: 2vw;
+        }
+    }
+
+    .comment {
+        color: color(mirage);
+        margin-bottom: 24px;
+        font-size: 3.5vw;
+        font-weight: 300;
+
+        div {
+            margin-bottom: 4vw;
+        }
+    }
+
+    .areas {
+        background: color(mercury);
+        padding: 10px;
+        color: color(mirage);
+        font-size: 3.5vw;
+        font-weight: 300;
+        display: block;
+    }
+}
+
+.how-teecha-works {
+    padding: 3vw 2vw;
+    font-weight: 300;
+    font-size: 4vw;
+    color: color(mirage);
+}

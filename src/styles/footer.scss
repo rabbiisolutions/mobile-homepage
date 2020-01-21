@@ -1,0 +1,102 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+footer {
+    margin-top: 5.875rem;
+
+    #lighter {
+        background: color(alto);
+        padding: 4vw 2vw;
+        color: color(mirage);
+        fill: color(mirage);
+
+        #contacts-title, #find-us-title, #links-title {
+            color: color(mirage64);
+            text-align: center;
+            font-size: 4.75vw;
+            margin: 6vw 0 3vw;
+            font-weight: 300;
+        }
+        #contacts {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 4.5vw;
+            padding-left: 13vw;
+
+            .icon-text {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin-bottom: 2vw;
+            }
+        }
+
+        #links {
+            display: flex;
+            justify-content: center;
+            font-size: 4.5vw;
+            margin-bottom: 4vw;
+        }
+
+        #links a {
+            text-decoration: none;
+            color: color(mirage);
+        }
+        #links a:hover {
+            color: color(curiosBlue);
+            text-decoration: underline;
+        }
+
+        #social {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-icon {
+            margin-right: 4vw;
+        }
+    }
+
+    #darken {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6vw 2vw;
+        background: color(nobel);
+
+        a {
+            color: color(mirage);
+            font-size: 4.5vw;
+        }
+
+        .copyright {
+            margin-top: 4vw;
+            color: color(mirage64);
+            font-size: 3.5vw;
+        }
+    }
+}

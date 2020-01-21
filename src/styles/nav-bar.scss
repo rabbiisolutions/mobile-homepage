@@ -1,0 +1,49 @@
+$colors: (
+    // navBar
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+$pointer: pointer;
+$navBarHeight: 3.5em;
+$webkitRadius : 10em;
+$borderRadius: 10em;
+$font16: 1em;
+
+#nav-bar {
+    background-color: color(alabaster);
+    height: $navBarHeight;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .logo {
+        display: inline-block; // can't apply max width without inline-block or block
+        max-width: 90px; // propagate to all logos (avoids large width on IE)
+    }
+
+    button {
+        -webkit-border-radius: $webkitRadius;
+        border-radius: $borderRadius;
+        background-color: color(alabaster);
+        color: color(purple);
+        border: 1px solid color(purple);
+        padding: .5em 1.5em;
+        cursor: $pointer;
+        font-size: $font16;
+    }
+
+    .toggle span{
+        fill: color(mirage);
+        cursor: $pointer;
+    }
+}

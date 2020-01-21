@@ -1,0 +1,94 @@
+$colors: (
+    // navBar
+        alto: #D3D3D3, mirage: #1B2531, purple: #A600C0,
+        curiosBlue: #27A1DA,
+    // content
+        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
+        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
+        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage25: rgba(27, 37, 49, 0.25),
+    // borders and accordion
+        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
+    // footer
+        nobel: #B7B7B7,
+    // stars
+        oldGold: #D4AF37, silver: #C4C4C4,
+    // space
+        white: #FFFFFF
+);
+
+@function color($name) {
+    @return map_get($colors, $name);
+}
+
+.sign-up-modal {
+    background-color: white;
+    z-index: 1000;
+    width: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: calc(100% - 100px);
+    padding: 4vw 2vw;
+    border-radius: 5px;
+
+    .close-icon {
+        right: 15px;
+        top: 8px;
+        position: absolute;
+        color: color(mirage64);
+        cursor: pointer;
+        font-size: 4vw;
+    }
+    .close-icon:hover {
+        color: color(curiosBlue);
+    }
+
+    .sign-up-text {
+        color: color(deepSeaGreen);
+        text-transform: capitalize;
+        font-size: 4vw;
+        text-align: center;
+        font-weight: bold;
+        margin: 2.75vw 0 4vw;
+    }
+
+    section {
+        border: 1px solid color(deepSeaGreen56);
+        background-color: color(concrete);
+        border-radius: 5px;
+        padding: 7px;
+        margin: 0 2vw 3vw;
+    }
+
+    .user-title, .msg {
+        font-weight: 300;
+        text-align: center;
+        text-transform: lowercase;
+        font-size: .9em;
+        color: color(deepSeaGreen);
+    }
+
+    .client-btn, .tutor-btn {
+        padding: .45rem 1.2rem;
+        display: inline-block;
+        margin: 2vw;
+        border: 1px solid color(curiosBlue);
+        background-color: color(white);
+        color: color(curiosBlue);
+        font-size: .9em;
+        text-align: center;
+    }
+
+    #client-btns, #tutor-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #tutor-btns {
+        flex-wrap: wrap;
+    }
+
+}
