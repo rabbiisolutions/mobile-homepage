@@ -33,7 +33,7 @@ $colors: (
 }
 
 .sections-accordion {
-    color: color(white);
+    //color: color(white);
     padding: 1.5vw 3vw;
 
     .section-toggle {
@@ -53,4 +53,88 @@ $colors: (
         cursor: pointer;
         border-color: color(curiosBlue);
     }
+}
+
+.reviews {
+    margin: 4vw 2vw 0;
+}
+
+.review {
+    margin: 4vw;
+
+    .reviewer, .desc {
+        color: color(mirage);
+        font-size: 3.75vw;
+    }
+
+    .reviewer {
+        font-weight: bold;
+    }
+
+    .stars {
+        margin: 4vw 0;
+
+        .blue span {
+            color: color(oldGold);
+        }
+
+        .s-grey span {
+            color: color(silver);
+        }
+
+        .star {
+            margin-right: 2vw;
+        }
+    }
+
+    .comment {
+        color: color(mirage);
+        margin: 20px 0;
+        font-size: 3.5vw;
+        font-weight: 300;
+
+        div {
+            margin-bottom: 4vw;
+        }
+    }
+}
+
+.how-teecha-works {
+    padding: 3vw 2vw;
+    font-weight: 300;
+    font-size: 4vw;
+    color: color(mirage);
+    background-color: color(alabaster);
+}
+
+.review-image {
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#reviews-cont {
+    position: relative;
+    overflow: hidden;
+    background-color: color(alabaster);
+    padding: 3vw;
+    margin-top: 2vw;
+}
+
+#children {
+    position: relative;
+    height: 130vw;
+}
+
+#dots {
+    text-align: center;
+    width: 300px;
+    z-index: 100;
+}
+
+#dot {
+    font-size: 1.5em;
+    cursor: pointer;
+    text-shadow: 1px 1px 1px #fff;
+    user-select: none;
 }
