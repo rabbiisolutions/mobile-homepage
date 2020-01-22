@@ -7,6 +7,7 @@ const KCSE = () => {
   return (
       <div>
         <p>{services.kcse[0]}</p>
+        <p>{services.kcse[1]}</p>
         {teeChaAreasLists.kcse}
         <GetTutor/>
       </div>

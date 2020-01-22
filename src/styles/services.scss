@@ -15,7 +15,7 @@ $colors: (
 $pointer: pointer;
 
 #teecha {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,6 +90,7 @@ $pointer: pointer;
     color: color(mirage);
     font-weight: 600;
     margin: 1vw 4vw 1vw 0;
+    list-style-image: url("../icons/feather_chevron-right.svg");
 }
 
 .areas-bg {

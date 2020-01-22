@@ -1,4 +1,7 @@
-const kcse = ['We provide competent teachers to help your child revise for the national exams'];
+const kcse = [
+    'We provide competent teachers to help your child revise for the national exams',
+    'Get a tutor for any class in '
+];
 const international = [
     'We provide teachers teaching different international schools & ready to help your child',
     'Get a tutor in:'
