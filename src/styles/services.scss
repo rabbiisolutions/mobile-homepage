@@ -97,3 +97,9 @@ $pointer: pointer;
     padding: 0 1vw;
     background-color: color(white);
 }
+
+.display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

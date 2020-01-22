@@ -15,8 +15,11 @@ const sema = 'sema@rabbii.co.ke';
 const menuTitle = 'Menu';
 const menuItems = ['Home', 'Our Services', 'Tuition Jobs', 'About Us', 'Trending', 'FAQs'];
 const hidden = 'hidden';
-const services = ['Pass KCPE/KCSE', 'Tutors for International School Systems', 'Learn New Sports' +
-' Games', 'Speak a Foreign Language', 'Developing your Hobbies and Interests', 'Special Needs'];
+const services = [
+  'Pass KCPE/KCSE', 'Tutors for International School Systems', 'Pass Your Tests',
+  'Learn New Sports Games', 'Speak a Foreign Language', 'Developing your Hobbies and Interests',
+  'Special Needs'
+];
 
 
 const texts = {
