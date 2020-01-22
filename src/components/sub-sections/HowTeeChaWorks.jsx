@@ -1,5 +1,5 @@
 import Icon from "../basic/icon";
-import howToGetATutor from "../../icons/how-to-get-a-tutor.svg"
+import howToGetATutor from "../../icons/55 1.svg"
 import React from "react";
 
 const HowTeeChaWorks = () => {

@@ -7,7 +7,10 @@ const Review = (props) => {
         <div className="reviewer">
           <span>{props.name}</span>
         </div>
-        <div className="comment">{props.comment}</div>
+        <div className="comment">
+          <div className={'quotation'}>"</div>
+          <div className={'text'}>{props.comment}</div>
+        </div>
         <div className="desc">
           <span>{props.description}</span>
         </div>

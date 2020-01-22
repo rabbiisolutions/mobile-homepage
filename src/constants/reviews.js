@@ -2,7 +2,7 @@ import texts from "./texts";
 
 const clientReviews = [
   {
-    name: 'Mutunga Katola', description: 'Buruburu', key: "ab",
+    name: 'Chris Mutunga', description: 'Buruburu', key: "ab",
     social:{
       url: 'mailto:mkatola@associate.crcna.org', color: 'azure'
     },
@@ -12,7 +12,7 @@ const clientReviews = [
     }, comment: 'I’m grateful for the good tutoring work you are doing. (Parent)'
   },
   {
-    name: 'Mutai Sharon', description: 'Physics and Maths Teacher', key: "ac",
+    name: 'Akinyi Sharon', description: 'Kasarani', key: "ac",
     social:{
       url: 'https://www.facebook.com/mutai.sharo', color: 'facebook'
     },
@@ -22,10 +22,10 @@ const clientReviews = [
     }, comment: 'Rabbii  is a very good educational company,I love how they have good relationship ' +
         'between the teachers and parents.They are well organized, determined in fulfilling their' +
         ' goals and vision.\n Working with them has been easy for me. I highly recommend the' +
-        ' company for their work.\n'
+        ' company for their work.\n (Teacher)'
   },
   {
-    name: 'Mr. Calvins Okello', description: 'National Examiner', key: "ad",
+    name: 'Mr. Bonface Okello', description: 'Starehe', key: "ad",
     social:{
       url: 'https://twitter.com/OkelloOnuko', color: 'twitter'
     },
@@ -33,7 +33,8 @@ const clientReviews = [
       shade: [texts.black, texts.black, texts.black, texts.black, texts.grey],
       size: "2", mobileSize: "1", key: 13
     }, comment: 'Rabbii has provided a remarkable teaching and learning experience where' +
-        ' resources and teaching services are provided to learners at the comfort of their homes'
+        ' resources and teaching services are provided to learners at the comfort of their' +
+        ' homes. (Teacher)'
   },
   {
     name: 'John Mwendwa', description: 'Kahawa Wendani', key: "ae",
@@ -44,7 +45,8 @@ const clientReviews = [
       shade: [texts.black, texts.black, texts.black, texts.grey, texts.grey],
       size: "2", mobileSize: "1", key: 14
     }, comment: 'I appreciate the professionalism applied to the TeeCha process, from' +
-        ' registration, scrutiny of tutors and clients to the management of the tuition process'
+        ' registration, scrutiny of tutors and clients to the management of the tuition process.' +
+        ' (Parent)'
   }
 ];
 
