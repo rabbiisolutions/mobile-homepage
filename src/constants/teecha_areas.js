@@ -1,7 +1,7 @@
 const teeChaAreas = {
   kcse: [
-    {key: 'aaa', text: 'Primary school'}, {key: 'aac', text: 'High school'}, {key: 'aac', text: 'KCPE'},
-    {key: 'aac', text: 'KCSE'},
+    {key: 'aaa', text: 'Primary school'}, {key: 'aab', text: 'High school'}, {key: 'aac', text: 'KCPE'},
+    {key: 'aae', text: 'KCSE'},
   ],
   language: [
     {key: 'a1', text: 'Chinese'}, {key: 'a2', text: 'French'},
