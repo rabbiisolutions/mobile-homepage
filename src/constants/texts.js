@@ -14,7 +14,8 @@ const telkom = '0772 915 361';
 const sema = 'sema@rabbii.co.ke';
 const menuTitle = 'Menu';
 const menuItems = ['Home', 'Our Services', 'Tuition Jobs', 'About Us', 'Trending', 'FAQs'];
-const benefits = ['Same gender tuition', '500+ professional tutors', 'Academic counselling', 'Affordable Packages', 'Low teacher to student ratio', 'Peer to peer Tuition'];
+const benefits = ['Same gender tuition', '500+ professional tutors', 'Academic counselling',
+  'Affordable Packages', 'Low teacher to student ratio', 'Peer to peer Tuition'];
 const hidden = 'hidden';
 const services = [
   'Pass KCPE/KCSE', 'Tutors for International School Systems', 'Pass Your Tests',
