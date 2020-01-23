@@ -1,5 +1,5 @@
 const homeTuitionInfo = '(You can access home tuition in Nairobi County and other counties Kenya)';
-const howTeeChaWorks = 'Getting a Tutor';
+const howTeeChaWorks = 'Get a Tutor';
 const reviews = 'Reviews';
 const dot = '⦁ ';
 const turquoise = 'turquoise';

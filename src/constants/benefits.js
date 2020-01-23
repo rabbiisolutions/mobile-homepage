@@ -1,5 +1,5 @@
 const sameGender = 'We offer same gender tuition to make it easy for the teacher and\n' +
-    'student to form a good relationship,. When a student likes a tutor its\n' +
+    'student to form a good relationship. When a student likes a tutor its\n' +
     'easy for him/her to change his/her attitude towards the subject being\n' +
     'tutored.';
 const  academicCounselling = 'We start our counselling sessions before even tuition begins during the\n' +

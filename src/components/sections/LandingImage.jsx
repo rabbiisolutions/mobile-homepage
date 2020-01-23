@@ -44,8 +44,10 @@ const Landing = () => {
         <div id={'greeting'}>
           <h2>achieve your potential</h2>
           <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
-          <p>Sign up to see our price list.</p>
-          <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
+          <div id={'dark-box'}>
+            <p>Sign up to see our price list.</p>
+            <Button value={texts.signUp} onClick={e => signUpHandler(e)} className="services btn-link"/>
+          </div>
         </div>
       </section>
   )

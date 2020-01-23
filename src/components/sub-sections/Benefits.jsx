@@ -32,14 +32,14 @@ const Benefits = () => {
       <div className={name} key={'d'}>
         {mobileAccordion.toggle(texts.benefits[3])}
         {
-          mobileAccordion.panel(benefits.academicCounselling)
+          mobileAccordion.panel(benefits.affordable)
         }
       </div>
       ,
       <div className={name} key={'e'}>
         {mobileAccordion.toggle(texts.benefits[4])}
         {
-          mobileAccordion.panel(benefits.affordable)
+          mobileAccordion.panel(benefits.studentRatio)
         }
       </div>
       ,
