@@ -8,9 +8,7 @@ const Tests = () => {
       <div>
         <p>{services.tests[0]}</p>
         <p>{services.tests[1]}</p>
-        <div className={'display'}>
           {teeChaAreasLists.tests}
-        </div>
         <GetTutor/>
       </div>
   )

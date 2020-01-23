@@ -34,10 +34,16 @@ const sectionCollapseHandler = (evt) => {
         element = element.parentNode; // set element to parent of parent of span/icon
       }
       else  if (elemClass === undefined) {
-        element = element.parentNode.parentNode; // set element to parent of parent of span/icon
+        if (element.tagName === "path") {
+          element = element.parentNode.parentNode.parentNode.parentNode; // set element to
+          // parent of parent of path
+        } else {
+          element = element.parentNode.parentNode; // set element to parent of parent of span/icon
+        }
       }
       else  if (elemClass === "injected-svg") {
-        element = element.parentNode.parentNode.parentNode; // set element to parent of parent of span/icon
+        element = element.parentNode.parentNode.parentNode; // set element to parent of parent
+        // of injected svg
       }
     }
   //console.log(elemClass);
