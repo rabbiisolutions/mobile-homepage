@@ -26,6 +26,7 @@ $font16: 1em;
     justify-content: space-around;
     align-items: center;
     z-index: 5;
+    box-shadow: 0 2px 4px rgba(27, 37, 49, 0.25);
 
     .logo {
         display: inline-block; // can't apply max width without inline-block or block
