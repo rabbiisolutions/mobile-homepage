@@ -6,7 +6,7 @@ import downIcon from "../../icons/feather_chevron-down.svg";
 
 const panel = (data) => {
   return (
-      <div className="panel">
+      <div className="panel benefit-desc">
         {data}
       </div>
   )
@@ -14,10 +14,10 @@ const panel = (data) => {
 
 const toggle = (title) => {
   return (
-      <div className="section-toggle" onClick={e => sectionCollapseHandler(e)}>
+      <div className="benefits-toggle" onClick={e => sectionCollapseHandler(e, true)}>
         <Icon src={rightIcon} height={1.5} width={1.5} className="down"/>
         <Icon src={downIcon} height={1.2} width={1.2} className="up hidden"/>
-        <span className="section-title">{title}</span>
+        <span className="benefits-title">{title}</span>
       </div>);
 };
 

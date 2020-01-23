@@ -12,6 +12,7 @@ import backDropHandler from "./events/backDrop";
 import SideBar from "./components/sections/SideBar.jsx";
 // text constants
 import texts from "./constants/texts";
+import Welcome from "./components/sections/Welcome";
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <MobileNavBar/>
           <main>
             <LandingImage/>
+            <Welcome/>
             <TeeCha/>
             <Sections/>
           </main>

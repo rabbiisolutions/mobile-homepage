@@ -3,50 +3,50 @@ import mobileAccordion from "../composite/Accordion";
 import texts from "../../constants/texts";
 import benefits from "../../constants/benefits";
 
-const name = 'sections-accordion';
+const name = 'benefits-accordion';
 
-const Mobile = () => {
+const Benefits = () => {
   const collapses = [];
   collapses.push(
       <div className={name} key={'a'}>
         {mobileAccordion.toggle(texts.benefits[0])}
         {
-          benefits.sameGender
+          mobileAccordion.panel(benefits.sameGender)
         }
       </div>
       ,
       <div className={name} key={'b'}>
         {mobileAccordion.toggle(texts.benefits[1])}
         {
-          benefits.plus500
+          mobileAccordion.panel(benefits.plus500)
         }
       </div>
       ,
       <div className={name} key={'c'}>
         {mobileAccordion.toggle(texts.benefits[2])}
         {
-          benefits.academicCounselling
+          mobileAccordion.panel(benefits.academicCounselling)
         }
       </div>
       ,
       <div className={name} key={'d'}>
         {mobileAccordion.toggle(texts.benefits[3])}
         {
-          benefits.academicCounselling
+          mobileAccordion.panel(benefits.academicCounselling)
         }
       </div>
       ,
       <div className={name} key={'e'}>
         {mobileAccordion.toggle(texts.benefits[4])}
         {
-          benefits.affordable
+          mobileAccordion.panel(benefits.affordable)
         }
       </div>
       ,
       <div className={name} key={'f'}>
         {mobileAccordion.toggle(texts.benefits[5])}
         {
-          benefits.peerToPeer
+          mobileAccordion.panel(benefits.peerToPeer)
         }
       </div>
   );
@@ -56,4 +56,4 @@ const Mobile = () => {
   );
 };
 
-export default Mobile;
+export default Benefits;

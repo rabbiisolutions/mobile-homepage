@@ -1,4 +1,5 @@
 let lastSection = null;
+let benefits = null;
 
 const toggle = (panel) => {
   if (panel.style.display === "block") {
@@ -7,34 +8,62 @@ const toggle = (panel) => {
     panel.style.display = "block";
   }
   panel.previousSibling.classList.toggle("shown");
-  changeIcon(panel.previousSibling);
+  benefits === true ? changeIcon(panel.previousSibling, 0, 1) : changeIcon(panel.previousSibling, 1, 2);
 };
 
-const changeIcon = (toggle) => {
+const changeIcon = (toggle, index1, index2) => {
   const hidden = 'hidden';
-  toggle.childNodes[1].classList.toggle(hidden); // down icon
-  toggle.childNodes[2].classList.toggle(hidden); // up icon
+  toggle.childNodes[index1].classList.toggle(hidden); // down icon
+  toggle.childNodes[index2].classList.toggle(hidden); // up icon
 };
 
-const sectionCollapseHandler = evt => {
+const sectionCollapseHandler = (evt, type) => {
   let element = evt.target;
   const elemClass = element.classList[0];
-  if (elemClass !== "section-toggle") {
-    // the click element came from from icon or title span
-    if (elemClass === "section-title"){
-      element = element.parentNode; // set element to parent of span/icon
+  if (!type) {
+    if (elemClass !== "section-toggle") {
+      if (benefits) {
+        lastSection = null;
+      }
+      benefits = false;
+      console.log(benefits);
+      // the click element came from from icon or title span
+      if (elemClass === "section-title"){
+        element = element.parentNode; // set element to parent of span/icon
+      }
+      else if (elemClass === "down") {
+        element = element.parentNode; // set element to parent of parent of span/icon
+      }
+      else if (elemClass === "up") {
+        element = element.parentNode; // set element to parent of parent of span/icon
+      }
+      else  if (elemClass === undefined) {
+        element = element.parentNode.parentNode; // set element to parent of parent of span/icon
+      }
+      else  if (elemClass === "injected-svg") {
+        element = element.parentNode.parentNode.parentNode; // set element to parent of parent of span/icon
+      }
     }
-    else if (elemClass === "down") {
-      element = element.parentNode; // set element to parent of parent of span/icon
-    }
-    else if (elemClass === "up") {
-      element = element.parentNode; // set element to parent of parent of span/icon
-    }
-    else  if (elemClass === undefined) {
-      element = element.parentNode.parentNode; // set element to parent of parent of span/icon
-    }
-    else  if (elemClass === "injected-svg") {
-      element = element.parentNode.parentNode.parentNode; // set element to parent of parent of span/icon
+  }
+  else {
+    if (elemClass !== "benefits-toggle"){
+      benefits = true;
+      console.log(benefits);
+      if (elemClass === "benefits-title"){
+          element = element.parentNode; // set element to parent of span/icon
+        }
+      else if (elemClass === "down") {
+        element = element.parentNode; // set element to parent of parent of span/icon
+      }
+      else if (elemClass === "up") {
+        element = element.parentNode; // set element to parent of parent of span/icon
+      }
+      else  if (elemClass === undefined) {
+        element = element.parentNode.parentNode; // set element to parent of parent of span/icon
+      }
+      else  if (elemClass === "injected-svg") {
+        element = element.parentNode.parentNode.parentNode; // set element to parent of parent of span/icon
+      }
     }
   }
   //console.log(elemClass);

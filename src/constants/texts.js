@@ -22,14 +22,20 @@ const services = [
   'Learn New Sports Games', 'Speak a Foreign Language', 'Developing your Hobbies and Interests',
   'Special Needs'
 ];
-
+const welcome = 'Welcome to rabbii';
+const welcomeSell = [
+    'Less than 20 students out of every 100 students join university through the government,\n',
+    ' less than 25 students out of every 100 students get 300 marks and above in K.C.P.E, \n',
+    'We exist to ensure you succeed!'
+];
 
 const texts = {
 homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   reviews: reviews, dot: dot, turquoise: turquoise, grey: grey, black: blue,
   signUp: signUp, talkToUs: talkToUs, connect: connect, signUpModalTitle: signUpModalTitle,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
-  menuItems: menuItems, hidden: hidden, services: services, benefits: benefits
+  menuItems: menuItems, hidden: hidden, services: services, benefits: benefits,
+  welcomeSell: welcomeSell, welcome: welcome
 };
 
 export default texts;

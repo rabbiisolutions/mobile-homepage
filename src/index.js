@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import './styles/base.css';
 import './styles/nav-bar.css';
 import './styles/landing.css';
+import './styles/welcome.css';
 import './styles/services.css';
 import './styles/sections.css';
 import './styles/footer.css';
