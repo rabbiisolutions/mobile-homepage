@@ -47,4 +47,11 @@ $font16: 1em;
         fill: color(mirage);
         cursor: $pointer;
     }
+
+    .toggle {
+        display: flex;
+        justify-content: end;
+        width: 50px;
+        padding: 0 3vw;
+    }
 }

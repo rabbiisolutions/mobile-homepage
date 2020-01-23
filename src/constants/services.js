@@ -7,8 +7,8 @@ const international = [
     'Get a tutor in:'
 ];
 const tests = [
-  'We help you pass your KASNEB exams or tests to join universities abroad',
-  'Get a tutor for:'
+  'We help you pass your KASNEB exams or any university exam or any tests to join universities' +
+  ' abroad', 'Get a tutor for:'
 ];
 const sports = [
   'We provide professional trainers to help you or your child grow in certain sports & games.',
