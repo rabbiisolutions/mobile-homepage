@@ -36,6 +36,8 @@ $colors: (
 
     .benefit-desc {
         font-size: 4.25vw;
+        padding-bottom: 2vw;
+        border-bottom: 2px solid white;
     }
 
     .sell, .benefit-desc {
@@ -67,8 +69,10 @@ $colors: (
         align-items: center;
         cursor: pointer;
         color: color(mirage);
-        margin: 5px 0;
+        padding-bottom: 2vw;
         font-weight: bold;
+        justify-content: space-between;
+        border-bottom: 2px solid white;
 
         .down span, .up span {
             fill: color(mirage);
@@ -83,6 +87,7 @@ $colors: (
     }
 
     .benefits-toggle.shown, .benefits-toggle:hover {
-        color: color(blueChill);
+        color: color(curiosBlue);
+        border: none;
     }
 }

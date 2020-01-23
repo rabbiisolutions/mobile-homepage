@@ -24,8 +24,8 @@ const services = [
 ];
 const welcome = 'Welcome to rabbii';
 const welcomeSell = [
-    'Less than 20 students out of every 100 students join university through the government,\n',
-    ' less than 25 students out of every 100 students get 300 marks and above in K.C.P.E, \n',
+    '80% of students do not get admitted to university through the government, ',
+    '75% of students do not get 300+ marks in their final exam in primary school, ',
     'We exist to ensure you succeed!'
 ];
 

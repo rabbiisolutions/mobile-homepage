@@ -3,7 +3,7 @@ import teeChaAreasLists from "../../../constants/teecha_areas_lists";
 import services from "../../../constants/services";
 import GetTutor from "../../composite/GetTutor";
 import Icon from "../../basic/icon";
-import chess from "../../../icons/pawn.svg"
+import chess from "../../../icons/services/pawn.svg"
 
 const Sports = () => {
   return (

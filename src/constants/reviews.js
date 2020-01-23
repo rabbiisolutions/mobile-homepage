@@ -19,10 +19,9 @@ const clientReviews = [
     stars: {
       shade:[texts.black, texts.black, texts.black, texts.black, texts.black],
       size: "2", mobileSize: "1", key: 12
-    }, comment: 'Rabbii  is a very good educational company,I love how they have good relationship ' +
+    }, comment: 'I love how they have good relationship ' +
         'between the teachers and parents.They are well organized, determined in fulfilling their' +
-        ' goals and vision.\n Working with them has been easy for me. I highly recommend the' +
-        ' company for their work.\n (Teacher)'
+        ' goals and vision. Working with them has been easy for me. (Teacher)'
   },
   {
     name: 'Mr. Bonface Okello', description: 'Starehe', key: "ad",

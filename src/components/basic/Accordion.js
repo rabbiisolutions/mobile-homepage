@@ -1,8 +1,8 @@
 import React from "react";
 import sectionCollapseHandler from "../../events/collapse";
 import Icon from "./icon";
-import downIcon from "../../icons/bx_bx-caret-downdown.svg";
-import upIcon from "../../icons/bx_bx-caret-downup.svg";
+import downIcon from "../../icons/collapse/bx_bx-caret-downdown.svg";
+import upIcon from "../../icons/collapse/bx_bx-caret-downup.svg";
 
 const panel = (data, bgClass, filter) => {
   return (
