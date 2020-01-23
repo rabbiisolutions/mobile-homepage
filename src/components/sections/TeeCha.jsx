@@ -1,6 +1,6 @@
 import React from "react";
 import texts from "../../constants/texts";
-import teeChaAreasCollapse from "../sub-sections/TeeChaAreasCollapse";
+import teeChaAreasCollapse from "./sub/TeeChaAreasCollapse";
 
 const TeeCha = () => {
   return (

@@ -13,7 +13,7 @@ import ImageWebp from "../../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../../constants/texts";
 import signUpHandler from "../../events/signUpModal";
-import Button from "../basic/button";
+import Button from "../basic/Button";
 
 const images = [
   {jpeg: pilotJpeg, webp: pilotWebp},

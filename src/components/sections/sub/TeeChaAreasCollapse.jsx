@@ -1,5 +1,5 @@
-import Accordion from "../basic/Accordion";
-import texts from "../../constants/texts";
+import Accordion from "../../composite/Accordion";
+import texts from "../../../constants/texts";
 import React from "react";
 import KCSE from "./services/KCSE";
 import Inter from "./services/International";

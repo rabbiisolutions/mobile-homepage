@@ -1,5 +1,5 @@
 import React from "react";
-import SectionsAccordion from "../sub-sections/SectionsAccordion";
+import SectionsAccordion from "./sub/SectionsAccordion";
 
 const Sections = () => {
   return (

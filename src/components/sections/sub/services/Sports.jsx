@@ -1,9 +1,9 @@
 import React from "react";
-import teeChaAreasLists from "../../../constants/teecha_areas_lists";
-import services from "../../../constants/services";
-import GetTutor from "../../composite/GetTutor";
-import Icon from "../../basic/icon";
-import chess from "../../../icons/services/pawn.svg"
+import teeChaAreasLists from "../../../../constants/teecha_areas_lists";
+import services from "../../../../constants/services";
+import GetTutor from "../../../composite/GetTutor";
+import Icon from "../../../basic/Icon";
+import chess from "../../../../icons/services/pawn.svg"
 
 const Sports = () => {
   return (

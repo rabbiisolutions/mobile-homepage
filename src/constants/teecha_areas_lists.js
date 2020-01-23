@@ -1,4 +1,4 @@
-import ListItem from "../components/basic/listItems";
+import ListItem from "../components/basic/ListItems";
 import teeChaAreas from "./teecha_areas";
 
 const kcse = ListItem(teeChaAreas.kcse);

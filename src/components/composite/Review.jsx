@@ -1,5 +1,5 @@
 import React from "react";
-import renderStars from "../basic/stars";
+import renderStars from "../basic/Stars";
 
 const Review = (props) => {
   return (
