@@ -1,10 +1,10 @@
 import React from "react";
 import ButtonLink from "../basic/ButtonLink.jsx";
 
-const GetTutor = () => {
+const GetTutor = (props) => {
   return (
       <div className={'get-a-tutor'}>
-        <ButtonLink link="https://forms.gle/y7KTkMDtYCtAywDu6" className="services" value="Get a Tutor"/>
+        <ButtonLink link={props.link} className="services" value="Get a Tutor"/>
       </div>
   )
 };

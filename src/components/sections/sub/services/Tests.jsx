@@ -9,7 +9,7 @@ const Tests = () => {
         <p>{services.tests[0]}</p>
         <p>{services.tests[1]}</p>
           {teeChaAreasLists.tests}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/edZLndJ9WuNb48u39"}/>
       </div>
   )
 };

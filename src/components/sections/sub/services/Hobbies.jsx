@@ -9,7 +9,7 @@ const Hobbies = () => {
         <p>{services.hobbies[0]}</p>
         <p>{services.hobbies[1]}</p>
         {teeChaAreasLists.hobbies}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/EZZya9AMuVcqC2eh8"}/>
       </div>
   )
 };

@@ -14,7 +14,7 @@ const Sports = () => {
           {teeChaAreasLists.sports}
           <Icon src={chess} height={15} units={'vw'}/>
         </div>
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/EZZya9AMuVcqC2eh8"}/>
       </div>
   )
 };

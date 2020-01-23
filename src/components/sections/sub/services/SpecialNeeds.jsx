@@ -8,7 +8,7 @@ const SpecialNeeds = () => {
       <div>
         <p>{services.specialNeeds[0]}</p>
         {teeChaAreasLists.specialNeeds}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/wWkfoAQbSgDzrtoY7"}/>
       </div>
   )
 };

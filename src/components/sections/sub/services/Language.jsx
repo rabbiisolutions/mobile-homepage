@@ -9,7 +9,7 @@ const Language = () => {
         <p>{services.language[0]}</p>
         <p>{services.language[1]}</p>
         {teeChaAreasLists.language}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/RFwpeWNTrf2kZTJ9A"}/>
       </div>
   )
 };

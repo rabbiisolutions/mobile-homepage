@@ -9,7 +9,7 @@ const Inter = () => {
         <p>{services.international[0]}</p>
         <p>{services.international[1]}</p>
         {teeChaAreasLists.international}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/7fkAVe5DHNwomAJWA"}/>
       </div>
   )
 };

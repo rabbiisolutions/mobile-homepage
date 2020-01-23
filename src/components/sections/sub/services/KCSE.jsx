@@ -9,7 +9,7 @@ const KCSE = () => {
         <p>{services.kcse[0]}</p>
         <p>{services.kcse[1]}</p>
         {teeChaAreasLists.kcse}
-        <GetTutor/>
+        <GetTutor link={"https://forms.gle/rd339azC1NoXo1YB6"}/>
       </div>
   )
 };
