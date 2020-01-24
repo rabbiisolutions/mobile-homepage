@@ -5,7 +5,7 @@ import React from "react";
 const HowTeeChaWorks = () => {
   return (
       <section className={'how-teecha-works'}>
-        <Icon src={howToGetATutor} height={'auto'} width={'100%'} units={''}/>
+        <Icon src={howToGetATutor} height={'100%'} width={'100%'} units={''}/>
       </section>
   );
 };

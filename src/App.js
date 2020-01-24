@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 // sections
 import MobileNavBar from "./components/sections/NavBar";
 import LandingImage from "./components/sections/LandingImage";
-import TeeCha from "./components/sections/TeeCha";
+import Services from "./components/sections/Services";
 import Sections from "./components/sections/Sections";
 import Footer from "./components/sections/Footer";
 // utilities
@@ -23,7 +23,7 @@ class App extends Component {
           <main>
             <LandingImage/>
             <Welcome/>
-            <TeeCha/>
+            <Services/>
             <Sections/>
           </main>
           <Footer/>

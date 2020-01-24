@@ -90,19 +90,7 @@ $pointer: pointer;
 .panel li {
     color: color(mirage);
     font-weight: 600;
-    position: relative;
-    list-style-type: none;
     margin: 2vw 0;
-}
-
-.panel li:before {
-    content: "";
-    position: absolute;
-    //top: 8px;
-    left: -24px;
-    width: 24px;
-    height: 24px;
-    background-image: url('../icons/feather_chevron-right.svg');
 }
 
 .areas-bg {
@@ -112,6 +100,6 @@ $pointer: pointer;
 
 .display {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }

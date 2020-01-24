@@ -2,7 +2,7 @@ import React from "react";
 import texts from "../../constants/texts";
 import teeChaAreasCollapse from "./sub/TeeChaAreasCollapse";
 
-const TeeCha = () => {
+const Services = () => {
   return (
       <section id={'teecha'}>
         <div id="teecha-areas">
@@ -16,4 +16,4 @@ const TeeCha = () => {
   );
 };
 
-export default TeeCha;
+export default Services;
