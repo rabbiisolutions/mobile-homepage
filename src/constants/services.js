@@ -26,8 +26,7 @@ const specialNeeds = [
     'You can get a qualified trained special needs ' +
     'teacher for your son or daughter at whatever ' +
     'level. We have teachers who are able to handle ' +
-    'students who require different level of care either ' +
-    'physically, or psychologically.'
+    'students who require different level of care in areas such as:'
 ];
 
 const services = {
