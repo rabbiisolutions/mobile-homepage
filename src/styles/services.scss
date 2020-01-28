@@ -14,14 +14,14 @@ $colors: (
 
 $pointer: pointer;
 
-#teecha {
+#our-services {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#teecha-areas {
+#services {
     margin: 7vw 4vw 0;
     background: color(alabaster);
     border: 1px solid color(mirage10);
@@ -38,7 +38,7 @@ $pointer: pointer;
         color: color(deepSeaGreen);
     }
 
-    #home-tuition-areas {
+    #services-list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -53,7 +53,7 @@ $pointer: pointer;
     }
 }
 
-.teecha-collapse {
+.services-collapse {
     width: 90%;
     border-bottom: 1px solid color(mirage10);
     margin-bottom: 1vw;
@@ -93,7 +93,7 @@ $pointer: pointer;
     margin: 2vw 0;
 }
 
-.areas-bg {
+.services-bg {
     padding: 0 1vw;
     background-color: color(white);
 }

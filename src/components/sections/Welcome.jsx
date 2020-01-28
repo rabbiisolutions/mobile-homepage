@@ -1,4 +1,4 @@
-import Benefits from "./sub/Benefits";
+import Benefits from "./Benefits";
 import React from "react";
 import texts from "../../constants/texts";
 

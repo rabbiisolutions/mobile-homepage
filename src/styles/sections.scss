@@ -5,7 +5,7 @@ $colors: (
     // content
         deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
         mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
-        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
+        mirage64: rgba(27, 37, 49, 0.64), mirage74: rgba(27, 37, 49, 0.74),
         mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
     // borders and accordion
         silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
@@ -35,7 +35,7 @@ $colors: (
 .sections-accordion {
     padding: 1.5vw 3vw;
 
-    .section-toggle {
+    .section-toggle, .link {
         color: color(deepSeaGreen);
         background-color: color(alabaster);
         border: 1px solid color(silverSand);
@@ -47,12 +47,13 @@ $colors: (
         font-size: 4.25vw;
     }
 
-    .section-toggle.shown, .section-toggle:hover {
+    .section-toggle.shown {
         color: color(curiosBlue);
         cursor: pointer;
         border-color: color(curiosBlue);
     }
 }
+
 
 .review {
     margin: 4vw;

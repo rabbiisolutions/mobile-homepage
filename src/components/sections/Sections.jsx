@@ -1,5 +1,41 @@
 import React from "react";
-import SectionsAccordion from "./sub/SectionsAccordion";
+import texts from "../../constants/texts";
+import Accordion from "../composite/Accordion";
+import HowTeeChaWorks from "./HowTeeChaWorks";
+import Reviews from "./Reviews";
+
+const name = 'sections-accordion';
+
+const SectionsAccordion = () => {
+  const collapses = [];
+  collapses.push(
+      <div className={name} key={'c1'}>
+        {Accordion.toggle(texts.howTeeChaWorks)}
+        {
+          Accordion.panel(HowTeeChaWorks(), 'canvas')
+        }
+      </div>
+      ,
+      <div className={name} key={'c2'}>
+        {<a href={'https://catalogue.rabbii.co.ke'} className={'link'}>Payment</a>}
+      </div>
+      ,
+      <div className={name} key={'c3'}>
+        {<a href={'https://tuition-jobs.rabbii.co.ke'} className={'link'}>Become a Tutor</a>}
+      </div>
+      ,
+      <div className={name} key={'c4'}>
+        {Accordion.toggle(texts.reviews)}
+        {
+          Reviews()
+        }
+      </div>
+  );
+
+  return ( // return the academic areas list
+      collapses.map((panel) => (panel))
+  );
+};
 
 const Sections = () => {
   return (
