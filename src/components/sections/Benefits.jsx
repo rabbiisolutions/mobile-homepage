@@ -1,6 +1,5 @@
 import React from "react";
 import Collapse from "../composite/Collapse";
-import texts from "../../constants/texts";
 import benefits from "../../constants/benefits";
 
 const name = 'benefits-accordion';
