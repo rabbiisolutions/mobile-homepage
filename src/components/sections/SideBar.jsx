@@ -12,12 +12,6 @@ class SideBar extends React.Component {
     };
   }
 
-  servicesToggle(e) {
-    if (!this.state.servicesOpen) {
-        document.getElementsByClassName('services')[0].classList.toggle('hidden');
-    }
-  };
-
   menuHandler(e) {
     const target = e.target;
     if (this.state.active)
@@ -28,7 +22,6 @@ class SideBar extends React.Component {
       this.setState( {servicesOpen: !this.state.servicesOpen});
     else {
       this.setState( {servicesOpen: false});
-      this.servicesToggle(e);
     }
     menuToggle(target);
   }
