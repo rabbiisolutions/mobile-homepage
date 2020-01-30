@@ -1,12 +1,12 @@
 import React from "react";
 import Icon from "../basic/Icon";
-import phone from "../../icons/contacts/ic_round-perm-phone-msgphone.svg"
-import whatsapp from "../../icons/contacts/bx_bxl-whatsappwhatsapp.svg"
-import mail from "../../icons/contacts/bx_bx-mail-sendmail.svg"
-import twitter from "../../icons/social/jam_twitter-circletwitter.svg"
-import youtube from "../../icons/social/jam_youtube-circleyoutube.svg"
-import facebook from "../../icons/social/jam_facebook-circlefacebook.svg"
-import linkedin from "../../icons/social/jam_linkedin-circlelinkedin.svg"
+import phone from "../../assets/icons/contacts/ic_round-perm-phone-msgphone.svg"
+import whatsapp from "../../assets/icons/contacts/bx_bxl-whatsappwhatsapp.svg"
+import mail from "../../assets/icons/contacts/bx_bx-mail-sendmail.svg"
+import twitter from "../../assets/icons/social/jam_twitter-circletwitter.svg"
+import youtube from "../../assets/icons/social/jam_youtube-circleyoutube.svg"
+import facebook from "../../assets/icons/social/jam_facebook-circlefacebook.svg"
+import linkedin from "../../assets/icons/social/jam_linkedin-circlelinkedin.svg"
 import texts from "../../constants/texts";
 
 

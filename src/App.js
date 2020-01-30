@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import { BrowserRouter as Router } from 'react-router-dom';
 // sections
 import MobileNavBar from "./components/sections/NavBar";
-import LandingImage from "./components/sections/LandingImage";
+import LandingImage from "./components/sections/Landing";
 import Services from "./components/sections/Services";
 import Sections from "./components/sections/Sections";
 import Footer from "./components/sections/Footer";

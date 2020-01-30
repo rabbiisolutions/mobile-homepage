@@ -1,6 +1,6 @@
 $colors: (
     // navBar
-        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0
+        alabaster: #FAFAFA, mirage: #1B2531, purple: #A600C0, curiosBlue: #27A1DA
 );
 
 @function color($name) {
@@ -37,8 +37,8 @@ $font16: 1em;
         -webkit-border-radius: $webkitRadius;
         border-radius: $borderRadius;
         background-color: color(alabaster);
-        color: color(purple);
-        border: 1px solid color(purple);
+        color: color(curiosBlue);
+        border: 1px solid color(curiosBlue);
         padding: .4em 1.5em;
         cursor: $pointer;
         font-size: $font16;

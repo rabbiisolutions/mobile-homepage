@@ -1,11 +1,11 @@
 import ListItem from "../components/basic/ListItems";
-import student from "../icons/services/student.svg";
-import graduated from "../icons/services/graduated.svg";
-import exam from "../icons/services/exam.svg"
-import cup from "../icons/services/cup.svg";
-import speak from "../icons/services/speak.svg";
-import drama from "../icons/services/drama.svg";
-import wheelchair from "../icons/services/wheelchair.svg";
+import student from "../assets/icons/services/student.svg";
+import graduated from "../assets/icons/services/graduated.svg";
+import exam from "../assets/icons/services/exam.svg"
+import cup from "../assets/icons/services/cup.svg";
+import speak from "../assets/icons/services/speak.svg";
+import drama from "../assets/icons/services/drama.svg";
+import wheelchair from "../assets/icons/services/wheelchair.svg";
 
 const kcse = {
   title: 'Pass KCPE/KCSE',

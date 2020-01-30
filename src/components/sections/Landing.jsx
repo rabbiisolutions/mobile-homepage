@@ -1,14 +1,14 @@
 import React from "react";
-import presidentJpeg from "../../images/carousel/1.png";
-import presidentWebp from "../../images/carousel/1.webp";
-import pilotJpeg from "../../images/carousel/2.png";
-import pilotWebp from "../../images/carousel/2.webp";
-import engineerJpeg from "../../images/carousel/3.png";
-import engineerWebp from "../../images/carousel/3.webp";
-import saxJpeg from "../../images/carousel/4.png";
-import saxWebp from "../../images/carousel/4.webp";
-import photographyJpeg from "../../images/carousel/5.png";
-import photographyWebp from "../../images/carousel/5.webp";
+import presidentJpeg from "../../assets/images/carousel/1.png";
+import presidentWebp from "../../assets/images/carousel/1.webp";
+import pilotJpeg from "../../assets/images/carousel/2.png";
+import pilotWebp from "../../assets/images/carousel/2.webp";
+import engineerJpeg from "../../assets/images/carousel/3.png";
+import engineerWebp from "../../assets/images/carousel/3.webp";
+import saxJpeg from "../../assets/images/carousel/4.png";
+import saxWebp from "../../assets/images/carousel/4.webp";
+import photographyJpeg from "../../assets/images/carousel/5.png";
+import photographyWebp from "../../assets/images/carousel/5.webp";
 import ImageWebp from "../../helpers/ImageWebp";
 import { Zoom } from "react-slideshow-image";
 import texts from "../../constants/texts";
@@ -44,7 +44,7 @@ const Landing = () => {
           <h2>achieve your potential</h2>
           <p>Providing you with a personal tutor to help you turn your dreams into reality.</p>
           <div id={'dark-box'}>
-            <p>Sign up <span>(client only*)</span> to see our price list.</p>
+            <p>Sign up to see our price list. <span>(client only*)</span></p>
             <ButtonLink value={texts.signUp} link={"https://forms.gle/3JZCSM2JJTPLTjP57"} className="services"/>
           </div>
         </div>

@@ -60,11 +60,7 @@ $colors: (
     p {
         width: 60vw;
         font-size: 4.5vw;
-
-        span {
-            font-weight: bold;
-            color: color(purple);
-        }
+        font-weight: 300;
     }
 
     #dark-box {
