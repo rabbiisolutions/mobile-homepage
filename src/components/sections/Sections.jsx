@@ -17,7 +17,7 @@ const SectionsAccordion = () => {
       </div>
       ,
       <div className={name} key={'c2'}>
-        {<a href={'https://catalogue.rabbii.co.ke'} className={'link'}>Payment</a>}
+        {<a href={'https://payment.rabbii.co.ke'} className={'link'}>Payment</a>}
       </div>
       ,
       <div className={name} key={'c3'}>
