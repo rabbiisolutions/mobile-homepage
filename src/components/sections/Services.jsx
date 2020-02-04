@@ -9,7 +9,7 @@ const name = 'services-collapse';
 const ServicesCollapse = () => {
   const collapses = [];
   collapses.push(
-      <div className={name} key={11}>
+      <div className={name} key={'a11'}>
         {Accordion.toggle('1. ' + services.kcse.title)}
         {
           Accordion.panel(
@@ -19,7 +19,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={12}>
+      <div className={name} key={'a12'}>
         {Accordion.toggle('2. ' + services.international.title)}
         {
           Accordion.panel(
@@ -29,7 +29,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={13}>
+      <div className={name} key={'a13'}>
         {Accordion.toggle('3. ' + services.tests.title)}
         {
           Accordion.panel(
@@ -39,7 +39,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={14}>
+      <div className={name} key={'a14'}>
         {Accordion.toggle('4. ' + services.sports.title)}
         {
           Accordion.panel(
@@ -49,7 +49,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={15}>
+      <div className={name} key={'a15'}>
         {Accordion.toggle('5. ' + services.language.title)}
         {
           Accordion.panel(
@@ -59,7 +59,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={16}>
+      <div className={name} key={'a16'}>
         {Accordion.toggle('6. ' + services.hobbies.title)}
         {
           Accordion.panel(
@@ -69,7 +69,7 @@ const ServicesCollapse = () => {
         }
       </div>
       ,
-      <div className={name} key={17}>
+      <div className={name} key={'a17'}>
         {Accordion.toggle('7. ' + services.specialNeeds.title)}
         {
           Accordion.panel(

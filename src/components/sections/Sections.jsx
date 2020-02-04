@@ -16,19 +16,19 @@ const SectionsAccordion = () => {
         }
       </div>
       ,
+      <div className={name} key={'c4'}>
+        {Accordion.toggle(texts.reviews)}
+        {
+          Reviews()
+        }
+      </div>
+      ,
       <div className={name} key={'c2'}>
         {<a href={'https://payment.rabbii.co.ke'} className={'link'}>Payment</a>}
       </div>
       ,
       <div className={name} key={'c3'}>
         {<a href={'https://tuition-jobs.rabbii.co.ke'} className={'link'}>Become a Tutor</a>}
-      </div>
-      ,
-      <div className={name} key={'c4'}>
-        {Accordion.toggle(texts.reviews)}
-        {
-          Reviews()
-        }
       </div>
   );
 

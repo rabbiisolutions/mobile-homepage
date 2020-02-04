@@ -3,7 +3,7 @@ import Icon from "../basic/Icon";
 import GetTutor from "./GetTutor";
 
 const Desc = (list) => {
-  return list.map((item) => (<p>{item}</p>));
+  return list.map((item) => (<p key={item.key}>{item.value}</p>));
 };
 
 const Service = (props) => {
