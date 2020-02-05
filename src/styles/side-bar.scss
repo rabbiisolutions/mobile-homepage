@@ -1,27 +1,18 @@
 $colors: (
     // navBar
-        alto: #D3D3D3, mirage: #1B2531, purple: #A600C0,
-        curiosBlue: #27A1DA,
+        mirage: #1B2531,
     // content
-        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
-        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
-        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
-        mirage25: rgba(27, 37, 49, 0.25),
+        deepSeaGreen: #0B4B68,
+        mirage64: rgba(27, 37, 49, 0.64),
+        mirage25: rgba(27, 37, 49, 0.25), gallery: #ECECEC,
     // borders and accordion
-        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
-    // footer
-        nobel: #B7B7B7,
-    // stars
-        oldGold: #D4AF37, silver: #C4C4C4,
-    // space
-        white: #FFFFFF
+        concrete: #F3F3F3
 );
 
 @function color($name) {
     @return map_get($colors, $name);
 }
 
-$pointer: pointer;
 $navBarHeight: 3.5em;
 
 .side-bar {
@@ -38,10 +29,10 @@ $navBarHeight: 3.5em;
 
     .menu-title {
         color: color(mirage64);
-        font-size: 6vw;
+        font-size: 3vw;
         text-align: center;
         display: block;
-        padding-bottom: 4vw;
+        padding-bottom: 1rem;
         border-bottom: 1px solid color(mirage25);
         font-weight: 300;
     }
@@ -53,17 +44,28 @@ $navBarHeight: 3.5em;
 
     .menu-item {
         color: color(mirage);
-        padding: 12px 15px;
+        //padding: 20px 15px;
         width: 100%;
-        cursor: $pointer;
+        cursor: pointer;
         font-weight: 300;
         font-size: 4vw;
+
+        .text {
+            padding: 20px 15px;
+            display: inline-block;
+        }
+
+        .activated {
+            background-color: #27A1DA;
+            height: 100%;
+        }
     }
 
     .menu-item.active, .menu-sub-item.active, .menu-item:hover, .menu-sub-item:hover {
         font-weight: bold;
         color: color(deepSeaGreen);
-        font-size: 7vw;
+        font-size: 4.5vw;
         text-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+        background-color: color(gallery);
     }
 }

@@ -21,6 +21,15 @@ $colors: (
     @return map_get($colors, $name);
 }
 
+
+$desktop: 768px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 .sign-up-modal {
     background-color: white;
     z-index: 1000;
@@ -55,11 +64,14 @@ $colors: (
     }
 
     section {
-        border: 1px solid color(deepSeaGreen56);
-        background-color: color(concrete);
+        border: 1px solid color(mercury);
+        background-color: #fafafa;
         border-radius: 5px;
         padding: 7px;
-        margin: 0 2vw 3vw;
+        margin: 0 2vw 5vw;
+        @include desktop {
+            margin: 0 2vw 2vw;
+        }
     }
 
     .user-title, .msg {
@@ -75,19 +87,26 @@ $colors: (
         display: inline-block;
         margin: 2vw;
         border: 1px solid color(curiosBlue);
-        background-color: color(white);
-        color: color(curiosBlue);
+        background-color: color(curiosBlue);
+        color: color(white);
         font-size: .9em;
         text-align: center;
     }
 
-    #client-btns, #tutor-btns {
+    #client-btns {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
     #tutor-btns {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        @include desktop {
+            justify-content: space-evenly;
+        }
         flex-wrap: wrap;
     }
 
