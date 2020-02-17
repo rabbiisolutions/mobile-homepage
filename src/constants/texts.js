@@ -14,6 +14,8 @@ const telkom = '0772 915 361';
 const sema = 'sema@rabbii.co.ke';
 const menuTitle = 'Menu';
 const menuItems = ['Home', 'Payment', 'Become a tutor', 'About us', 'Trending', 'FAQs'];
+const menuLinks = ['https://payment.co.ke', 'https://tutor.rabbii.co.ke', 'https://about.rabbii.co.ke',
+  'https://trending.rabbii.co.ke', 'https://faqs.rabbii.co.ke'];
 const hidden = 'hidden';
 const welcome = 'Welcome to rabbii';
 const welcomeSell = [
@@ -27,7 +29,8 @@ homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   reviews: reviews, dot: dot, turquoise: turquoise, grey: grey, black: blue,
   signUp: signUp, talkToUs: talkToUs, connect: connect, signUpModalTitle: signUpModalTitle,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
-  menuItems: menuItems, hidden: hidden, welcomeSell: welcomeSell, welcome: welcome
+  menuItems: menuItems, hidden: hidden, welcomeSell: welcomeSell, welcome: welcome,
+  menuLinks: menuLinks
 };
 
 export default texts;
