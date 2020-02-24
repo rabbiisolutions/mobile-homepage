@@ -13,9 +13,9 @@ const safaricom = '0798 884 419';
 const telkom = '0772 915 361';
 const sema = 'sema@rabbii.co.ke';
 const menuTitle = 'Menu';
-const menuItems = ['Home', 'Payment', 'Become a tutor', 'About us', 'Trending', 'FAQs'];
-const menuLinks = ['https://payment.co.ke', 'https://tutor.rabbii.co.ke', 'https://about.rabbii.co.ke',
-  'https://trending.rabbii.co.ke', 'https://faqs.rabbii.co.ke'];
+const menuItems = ['Home', 'Payment', 'Become a tutor', 'About us', 'FAQs', 'Trending'];
+const menuLinks = ['https://payment.rabbii.co.ke', 'https://tutor.rabbii.co.ke', 'https://about.rabbii.co.ke',
+   'https://faqs.rabbii.co.ke', 'https://trending.rabbii.co.ke'];
 const hidden = 'hidden';
 const welcome = 'Welcome to rabbii';
 const welcomeSell = [
