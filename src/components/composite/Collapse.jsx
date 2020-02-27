@@ -1,8 +1,8 @@
 import React from "react";
 import sectionCollapseHandler from "../../events/collapse";
 import Icon from "../basic/Icon";
-import upIcon from "../../assets/icons/collapse/feather_chevron-up.svg";
-import downIcon from "../../assets/icons/collapse/feather_chevron-down.svg";
+import upIcon from "../../assets/icons/collapse/up.svg";
+import downIcon from "../../assets/icons/collapse/down.svg";
 
 const panel = (data) => {
   return (

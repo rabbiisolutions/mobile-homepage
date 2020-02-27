@@ -21,6 +21,12 @@ $colors: (
     @return map_get($colors, $name);
 }
 
+%column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 footer {
     margin-top: 2.5rem;
 
@@ -30,17 +36,23 @@ footer {
         color: color(mirage);
         fill: color(mirage);
 
-        #contacts-title, #find-us-title, #links-title {
+        .footer-title {
             color: color(mirage64);
             text-align: center;
             font-size: 4.75vw;
             margin: 6vw 0 3vw;
             font-weight: 300;
         }
+        .col {
+            @extend %column;
+        }
+        .links {
+            align-items: center;
+            a {
+                margin-bottom: 2vw;
+            }
+        }
         #contacts {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
             font-size: 4.5vw;
             padding-left: 13vw;
 

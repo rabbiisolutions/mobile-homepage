@@ -8,6 +8,7 @@ const blue = 'blue';
 const signUp = 'Sign Up';
 const signUpModalTitle = 'sign up to receive our price list';
 const talkToUs = 'Talk to us';
+const links = 'Links';
 const connect = 'Connect';
 const safaricom = '0798 884 419';
 const telkom = '0772 915 361';
@@ -30,7 +31,7 @@ homeTuitionInfo: homeTuitionInfo, howTeeChaWorks: howTeeChaWorks,
   signUp: signUp, talkToUs: talkToUs, connect: connect, signUpModalTitle: signUpModalTitle,
   safaricom: safaricom, telkom: telkom, sema: sema, menuTitle: menuTitle,
   menuItems: menuItems, hidden: hidden, welcomeSell: welcomeSell, welcome: welcome,
-  menuLinks: menuLinks
+  menuLinks: menuLinks, links: links
 };
 
 export default texts;

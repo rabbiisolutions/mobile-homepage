@@ -14,8 +14,12 @@ const Footer = () => {
   return (
       <footer>
         <div id="lighter">
-          <div id="contacts-title">{texts.talkToUs}</div>
-          <div id="contacts">
+          <div className="footer-title">{texts.links}</div>
+          <div className={'col links'}>
+            <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
+          </div>
+          <div className="footer-title">{texts.talkToUs}</div>
+          <div id="contacts" className={'col'}>
               <span className="icon-text">
                 <Icon src={phone} className="footer-icon" height={9} width={9} units={'vw'}/>
                 <span>{texts.safaricom}</span>
@@ -29,7 +33,7 @@ const Footer = () => {
                 <span><a href={'mailto:'+ texts.sema}>{texts.sema}</a></span>
               </span>
           </div>
-          <div id="find-us-title">{texts.connect}</div>
+          <div className="footer-title">{texts.connect}</div>
           <div id="social">
             <a href="https://www.facebook.com/rabbiitech/" target="_blank" rel="noopener noreferrer">
               <Icon src={facebook} className="footer-icon" height={12} width={12} units={'vw'}/>
