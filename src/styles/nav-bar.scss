@@ -57,9 +57,13 @@ $font16: 1em;
         justify-content: flex-end;
         width: 6vh;
         line-height: 15px;
-        padding: 0 8px 0 0;
+        padding: 0 1.25vw 0 0;
     }
 
+    .left {
+        width: 50px;
+        padding: 0 3vw;
+    }
 
     .pulse {
         background-color: #EEEEEE;

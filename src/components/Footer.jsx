@@ -1,13 +1,13 @@
 import React from "react";
-import Icon from "../basic/Icon";
-import phone from "../../assets/icons/contacts/ic_round-perm-phone-msgphone.svg"
-import whatsapp from "../../assets/icons/contacts/bx_bxl-whatsappwhatsapp.svg"
-import mail from "../../assets/icons/contacts/bx_bx-mail-sendmail.svg"
-import twitter from "../../assets/icons/social/jam_twitter-circletwitter.svg"
-import youtube from "../../assets/icons/social/jam_youtube-circleyoutube.svg"
-import facebook from "../../assets/icons/social/jam_facebook-circlefacebook.svg"
-import linkedin from "../../assets/icons/social/jam_linkedin-circlelinkedin.svg"
-import texts from "../../constants/texts";
+import Icon from "./basic/Icon";
+import phone from "../assets/icons/contacts/ic_round-perm-phone-msgphone.svg"
+import whatsapp from "../assets/icons/contacts/bx_bxl-whatsappwhatsapp.svg"
+import mail from "../assets/icons/contacts/bx_bx-mail-sendmail.svg"
+import twitter from "../assets/icons/social/jam_twitter-circletwitter.svg"
+import youtube from "../assets/icons/social/jam_youtube-circleyoutube.svg"
+import facebook from "../assets/icons/social/jam_facebook-circlefacebook.svg"
+import linkedin from "../assets/icons/social/jam_linkedin-circlelinkedin.svg"
+import texts from "../constants/texts";
 
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
         <div id="lighter">
           <div className="footer-title">{texts.links}</div>
           <div className={'col links'}>
-            <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>Class Attendance</a>
+            <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>{texts.dot}&nbsp;Class Attendance</a>
           </div>
           <div className="footer-title">{texts.talkToUs}</div>
           <div id="contacts" className={'col'}>

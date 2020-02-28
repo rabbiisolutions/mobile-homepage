@@ -1,11 +1,11 @@
 import React from "react";
-import Logo from "../basic/Logo";
-import Icon from "../basic/Icon";
-import toggle from "../../assets/icons/bx_bx-menu-alt-leftmenu.svg"
-import Button from "../basic/Button";
-import texts from "../../constants/texts";
-import signUpHandler from "../../events/signUpModal";
-import menuToggle from "../../events/menuToggle";
+import Logo from "./basic/Logo";
+import Icon from "./basic/Icon";
+import toggle from "../assets/icons/bx_bx-menu-alt-leftmenu.svg"
+import Button from "./basic/Button";
+import texts from "../constants/texts";
+import signUpHandler from "../events/signUpModal";
+import menuToggle from "../events/menuToggle";
 import {useCookies} from "react-cookie";
 
 function Toggle() {
@@ -30,7 +30,9 @@ const MobileNavBar = () => {
     <nav id="nav-bar">
       <Logo className="logo" height={3.5} width={5.625} units={'em'}/>
       <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>
-      <Toggle/>
+      <div className={'left'}>
+        <Toggle/>
+      </div>
     </nav>
   );
 };
