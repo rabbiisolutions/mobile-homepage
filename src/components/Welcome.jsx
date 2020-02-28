@@ -1,6 +1,6 @@
 import Benefits from "./Benefits";
 import React from "react";
-import texts from "../../constants/texts";
+import texts from "../constants/texts";
 
 const Welcome = () => {
   return (

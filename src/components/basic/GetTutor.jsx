@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonLink from "../basic/ButtonLink.jsx";
+import ButtonLink from "./ButtonLink.jsx";
 
 const GetTutor = (props) => {
   return (

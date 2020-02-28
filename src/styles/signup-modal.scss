@@ -110,6 +110,10 @@ $hd: 1330px;
     .footer {
         @extend %footers;
         padding: 2vh;
+        font-weight: 300;
+        text-align: center;
+        text-transform: lowercase;
+        font-size: .9em;
     }
 
     .close-icon {

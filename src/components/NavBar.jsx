@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "./basic/Logo";
 import Icon from "./basic/Icon";
 import toggle from "../assets/icons/bx_bx-menu-alt-leftmenu.svg"
 import Button from "./basic/Button";
@@ -7,6 +6,15 @@ import texts from "../constants/texts";
 import signUpHandler from "../events/signUpModal";
 import menuToggle from "../events/menuToggle";
 import {useCookies} from "react-cookie";
+import logo from "../assets/icons/logo.svg";
+
+const Logo = (props) => {
+  return (
+      <a href={'#nav-bar'}>
+        <Icon src={logo} className={props.className} height={props.height} width={props.width} units={props.units}/>
+      </a>
+  );
+};
 
 function Toggle() {
   // fetch cookies object, set toggled variable (class)

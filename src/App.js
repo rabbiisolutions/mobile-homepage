@@ -2,17 +2,17 @@ import React, {Component} from "react";
 import { CookiesProvider } from 'react-cookie';
 // sections
 import MobileNavBar from "./components/NavBar";
-import LandingImage from "./components/sections/Landing";
-import Services from "./components/sections/Services";
-import Sections from "./components/sections/Sections";
+import LandingImage from "./components/Landing";
+import Services from "./components/Services";
+import Sections from "./components/Sections";
 import Footer from "./components/Footer";
 // utilities
 import SignUpModal from "./components/SignUpModal.jsx";
 import backDropHandler from "./events/backDrop";
-import SideBar from "./components/sections/SideBar.jsx";
+import SideBar from "./components/SideBar.jsx";
 // text constants
 import texts from "./constants/texts";
-import Welcome from "./components/sections/Welcome";
+import Welcome from "./components/Welcome";
 
 
 class App extends Component {

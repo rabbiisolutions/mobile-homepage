@@ -1,10 +1,28 @@
 import React from "react";
-import texts from "../../constants/texts";
-import Accordion from "../composite/Accordion";
-import Service from "../composite/Service";
-import services from "../../constants/services";
+import texts from "../constants/texts";
+import Accordion from "./basic/Accordion";
+import services from "../constants/services";
+import Icon from "./basic/Icon";
+import GetTutor from "./basic/GetTutor";
 
 const name = 'services-collapse';
+
+const Desc = (list) => {
+  return list.map((item) => (<p key={item.key}>{item.value}</p>));
+};
+
+const Service = (props) => {
+  return (
+      <div>
+        {Desc(props.desc)}
+        <div className={'display'}>
+          {props.examples}
+          <Icon src={props.icon} height={15} units={'vw'} width={15}/>
+        </div>
+        <GetTutor link={props.link}/>
+      </div>
+  );
+};
 
 const ServicesCollapse = () => {
   const collapses = [];

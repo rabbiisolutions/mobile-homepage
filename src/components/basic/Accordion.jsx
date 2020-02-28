@@ -1,6 +1,6 @@
 import React from "react";
 import sectionCollapseHandler from "../../events/collapse";
-import Icon from "../basic/Icon";
+import Icon from "./Icon";
 import downIcon from "../../assets/icons/collapse/bx_bx-caret-downdown.svg";
 import upIcon from "../../assets/icons/collapse/bx_bx-caret-downup.svg";
 
