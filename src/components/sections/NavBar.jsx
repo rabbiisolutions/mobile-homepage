@@ -6,6 +6,23 @@ import Button from "../basic/Button";
 import texts from "../../constants/texts";
 import signUpHandler from "../../events/signUpModal";
 import menuToggle from "../../events/menuToggle";
+import {useCookies} from "react-cookie";
+
+function Toggle() {
+  // fetch cookies object, set toggled variable (class)
+  const [cookies, setCookie] = useCookies(['toggled']);
+  let toggled = cookies['toggled'] ? '' : 'pulse';
+
+  function toggleHandler () {
+    menuToggle();
+    // set toggled true if not already true
+    if (!cookies['toggled']) setCookie('toggled', true, { path: '/' });
+  }
+
+  return (
+      <Icon src={toggle} className={"toggle " + toggled} height={2.25} width={2.25} units={'em'} onClick={e => toggleHandler(e)}/>
+  )
+}
 
 
 const MobileNavBar = () => {
@@ -13,7 +30,7 @@ const MobileNavBar = () => {
     <nav id="nav-bar">
       <Logo className="logo" height={3.5} width={5.625} units={'em'}/>
       <Button value={texts.signUp} onClick={e => signUpHandler(e)}/>
-      <Icon src={toggle} className="toggle" height={2.25} width={2.25} units={'em'} onClick={e => menuToggle(e)}/>
+      <Toggle/>
     </nav>
   );
 };
