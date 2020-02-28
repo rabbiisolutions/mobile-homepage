@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
+import { CookiesProvider } from 'react-cookie';
 // sections
 import MobileNavBar from "./components/sections/NavBar";
 import LandingImage from "./components/sections/Landing";
@@ -7,7 +7,7 @@ import Services from "./components/sections/Services";
 import Sections from "./components/sections/Sections";
 import Footer from "./components/sections/Footer";
 // utilities
-import SignUpModal from "./components/composite/SignUpModal.jsx";
+import SignUpModal from "./components/SignUpModal.jsx";
 import backDropHandler from "./events/backDrop";
 import SideBar from "./components/sections/SideBar.jsx";
 // text constants
@@ -18,7 +18,7 @@ import Welcome from "./components/sections/Welcome";
 class App extends Component {
   render() {
     return (
-        <Router>
+        <CookiesProvider>
           <MobileNavBar/>
           <main>
             <LandingImage/>
@@ -30,7 +30,7 @@ class App extends Component {
           <div className="page-mask hidden" onClick={e => backDropHandler(e)} />
           <SignUpModal className="sign-up-modal hidden" signUpText={texts.signUpModalTitle}/>
           <SideBar/>
-        </Router>
+        </CookiesProvider>
     );
   }
 }

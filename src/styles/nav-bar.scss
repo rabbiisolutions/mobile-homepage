@@ -42,6 +42,9 @@ $font16: 1em;
         padding: .4em 1.5em;
         cursor: $pointer;
         font-size: $font16;
+        &:focus {
+            outline: 0 !important;
+        }
     }
 
     .toggle span{

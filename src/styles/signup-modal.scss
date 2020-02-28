@@ -1,26 +1,19 @@
 $colors: (
-    // navBar
-        alto: #D3D3D3, mirage: #1B2531, purple: #A600C0,
-        curiosBlue: #27A1DA,
     // content
-        deepSeaGreen: #0B4B68, deepSeaGreen56: rgba(11, 75, 104, 0.56),
-        mirage80: rgba(27, 37, 49, 0.8), mirage90: rgba(27, 37, 49, 0.9),
-        mirage64: rgba(27, 37, 49, 0.64),mirage74: rgba(27, 37, 49, 0.74),
-        mirage25: rgba(27, 37, 49, 0.25),
-    // borders and accordion
-        silverSand: #BDBFC3, concrete: #F3F3F3, mercury: #E2E2E2,
-    // footer
-        nobel: #B7B7B7,
-    // stars
-        oldGold: #D4AF37, silver: #C4C4C4,
-    // space
-        white: #FFFFFF
+        mirage64: rgba(27, 37, 49, 0.64),
 );
 
 @function color($name) {
     @return map_get($colors, $name);
 }
 
+$tab: 450px;
+
+@mixin tab {
+    @media (min-width: #{$tab}) {
+        @content;
+    }
+}
 
 $desktop: 768px;
 
@@ -30,84 +23,161 @@ $desktop: 768px;
     }
 }
 
-.sign-up-modal {
+$monitor: 1024px;
+
+@mixin monitor {
+    @media (min-width: #{$monitor}) {
+        @content;
+    }
+}
+
+$hd: 1330px;
+
+@mixin hd {
+    @media (min-width: #{$hd}) {
+        @content;
+    }
+}
+
+%modals {
     background-color: white;
     z-index: 1000;
-    width: 90%;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: calc(100% - 100px);
-    padding: 4vw 2vw;
+    text-align: center;
+    @include desktop {
+        top: 35%;
+    }
+    @include monitor {
+        top: 50%;
+    }
+}
+%header {
+    font-weight: bold;
+    margin: 1vw 0 2vw;
+    @include desktop {
+        margin: 1vw 0;
+        font-size: 1.5rem;
+    }
+    font-size: 1.25rem;
+}
+
+%p {
+    background-color: #FAFAFA;
+}
+
+%headers {
+    @extend %p;
+    border-radius: 5px 5px 0 0;
+}
+
+%footers {
+    @extend %p;
+    border-radius: 0 0 5px 5px;
+}
+%close {
+    right: 10px;
+    top: 5px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.sign-up-modal {
+    @extend %modals;
+    width: 90%;
     border-radius: 5px;
+    max-height: calc(100% - 100px);
+
+    @include tab {
+        width: 70%;
+    }
+    @include desktop {
+        width: 50%;
+    }
+    @include monitor {
+        width: 40%;
+    }
+    @include hd {
+        width: 30%;
+    }
+
+    .header {
+        @extend %headers;
+        padding: 2vh;
+    }
+    .footer {
+        @extend %footers;
+        padding: 2vh;
+    }
 
     .close-icon {
-        right: 15px;
-        top: 8px;
-        position: absolute;
-        color: color(mirage64);
-        cursor: pointer;
-        font-size: 4vw;
-    }
-    .close-icon:hover {
-        color: color(curiosBlue);
+        @extend %close;
     }
 
-    .sign-up-text {
-        color: color(deepSeaGreen);
+    #sign-up-text {
+        @extend %header;
+    }
+
+    .user-title {
+        font-size: .9em;
+        margin: 2vw 0 3vw 3vh;
         text-transform: capitalize;
-        font-size: 4vw;
-        text-align: center;
+        font-weight: 600;
+        text-align: left;
+        color: rgba(27, 37, 49, 0.74);
+        @include desktop {
+            font-size: 1.0125em;
+            margin: 0 0 2vw 7vw;
+        }
+        @include monitor {
+            margin-left: 5vw;
+            margin-bottom: 1.5vw;
+        }
+    }
+
+    .content {
+        padding: 2vh 1vh 4vh;
+        @include desktop {
+            padding: 2vh 0;
+        }
+        @include monitor {
+            padding: 4vh 0;
+        }
+        &:nth-child(1) {
+            border-bottom: 1px solid #eeeeee;
+        }
+    }
+
+    .btn-link {
+        border-color: #0071A5;
+        color: #0071A5;
+        background-color: #FFFFFF;
         font-weight: bold;
-        margin: 2.75vw 0 4vw;
-    }
-
-    section {
-        border: 1px solid color(mercury);
-        background-color: #fafafa;
-        border-radius: 5px;
-        padding: 7px;
-        margin: 0 2vw 5vw;
-        @include desktop {
-            margin: 0 2vw 2vw;
+        padding: .4em 1.5em;
+        font-size: 1rem !important;
+        &:hover {
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #0071A5;
         }
     }
 
-    .user-title, .msg {
-        font-weight: 300;
-        text-align: center;
-        text-transform: lowercase;
-        font-size: .9em;
-        color: color(deepSeaGreen);
-    }
-
-    .client-btn, .tutor-btn {
-        padding: .45rem 1.2rem;
-        display: inline-block;
-        margin: 2vw;
-        border: 1px solid color(curiosBlue);
-        background-color: color(curiosBlue);
-        color: color(white);
-        font-size: .9em;
-        text-align: center;
-    }
-
-    #client-btns {
+    %group {
         display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #tutor-btns {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: flex-start;
-        @include desktop {
-            justify-content: space-evenly;
-        }
-        flex-wrap: wrap;
+        align-items: center;
     }
 
+    #client-btns, #tutor-btns {
+        @extend %group;
+        margin-left: 4vw;
+        @include desktop {
+            margin-left: 4vw;
+        }
+        @include monitor {
+            margin-left: 3vw;
+        }
+    }
 }
