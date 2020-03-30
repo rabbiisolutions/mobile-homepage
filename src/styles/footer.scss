@@ -29,6 +29,7 @@ $colors: (
 
 footer {
     margin-top: 2.5rem;
+    font-weight: 300;
 
     #lighter {
         background: color(alabaster);
@@ -41,13 +42,13 @@ footer {
             text-align: center;
             font-size: 4.75vw;
             margin: 6vw 0 3vw;
-            font-weight: 300;
         }
         .col {
             @extend %column;
         }
         .links {
             align-items: center;
+            font-size: 4.5vw;
             a {
                 margin-bottom: 2vw;
             }

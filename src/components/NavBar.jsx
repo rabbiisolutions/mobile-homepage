@@ -1,12 +1,19 @@
 import React from "react";
 import Icon from "./basic/Icon";
 import toggle from "../assets/icons/bx_bx-menu-alt-leftmenu.svg"
-import Button from "./basic/Button";
 import texts from "../constants/texts";
 import signUpHandler from "../events/signUpModal";
 import menuToggle from "../events/menuToggle";
 import {useCookies} from "react-cookie";
 import logo from "../assets/icons/logo.svg";
+
+const Button = (props) => {
+  return (
+      <button type="button" className={props.className} onClick={props.onClick}>
+        {props.value}
+      </button>
+  );
+};
 
 const Logo = (props) => {
   return (

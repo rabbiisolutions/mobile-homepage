@@ -4,12 +4,10 @@ import Icon from "./Icon";
 import downIcon from "../../assets/icons/collapse/bx_bx-caret-downdown.svg";
 import upIcon from "../../assets/icons/collapse/bx_bx-caret-downup.svg";
 
-const panel = (data, bgClass, filter) => {
+const panel = (data, bgClass) => {
   return (
       <div className={"panel "+ bgClass}>
-        <div className={filter}>
         {data}
-        </div>
       </div>
   )
 };

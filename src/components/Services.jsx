@@ -3,9 +3,19 @@ import texts from "../constants/texts";
 import Accordion from "./basic/Accordion";
 import services from "../constants/services";
 import Icon from "./basic/Icon";
-import GetTutor from "./basic/GetTutor";
+import ButtonLink from "./basic/ButtonLink";
+import { BrowserRouter as Router } from 'react-router-dom';
 
-const name = 'services-collapse';
+const GetTutor = (links) => {
+  return (
+      <div className={'get-a-tutor'}>
+        {links.map((link) => (
+            <ButtonLink link={link.link} key={link.key} className="services"
+                        value={ link.value ? link.value : "Get a Tutor"}/>
+        ))}
+      </div>
+  )
+};
 
 const Desc = (list) => {
   return list.map((item) => (<p key={item.key}>{item.value}</p>));
@@ -13,94 +23,29 @@ const Desc = (list) => {
 
 const Service = (props) => {
   return (
-      <div>
+      <Router>
         {Desc(props.desc)}
         <div className={'display'}>
           {props.examples}
           <Icon src={props.icon} height={15} units={'vw'} width={15}/>
         </div>
-        <GetTutor link={props.link}/>
-      </div>
+        {GetTutor(props.links)}
+      </Router>
   );
 };
 
-const ServicesCollapse = () => {
-  const collapses = [];
-  collapses.push(
-      <div className={name} key={'a11'}>
-        {Accordion.toggle('1. ' + services.kcse.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.kcse.desc} examples={services.kcse.examples}
-                       icon={services.kcse.icon} link={services.kcse.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a12'}>
-        {Accordion.toggle('2. ' + services.international.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.international.desc} examples={services.international.examples}
-                       icon={services.international.icon} link={services.international.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a13'}>
-        {Accordion.toggle('3. ' + services.tests.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.tests.desc} examples={services.tests.examples}
-                       icon={services.tests.icon} link={services.tests.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a14'}>
-        {Accordion.toggle('4. ' + services.sports.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.sports.desc} examples={services.sports.examples}
-                       icon={services.sports.icon} link={services.sports.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a15'}>
-        {Accordion.toggle('5. ' + services.language.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.language.desc} examples={services.language.examples}
-                       icon={services.language.icon} link={services.language.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a16'}>
-        {Accordion.toggle('6. ' + services.hobbies.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.hobbies.desc} examples={services.hobbies.examples}
-                       icon={services.hobbies.icon} link={services.hobbies.link}/>,
-              'services-bg')
-        }
-      </div>
-      ,
-      <div className={name} key={'a17'}>
-        {Accordion.toggle('7. ' + services.specialNeeds.title)}
-        {
-          Accordion.panel(
-              <Service desc={services.specialNeeds.desc} examples={services.specialNeeds.examples}
-                       icon={services.specialNeeds.icon} link={services.specialNeeds.link}/>,
-              'services-bg')
-        }
-      </div>
-  );
-
-  return ( // return the academic services list
-      collapses.map((panel) => (panel))
-  );
+const ServicesCollapse = (props) => {
+ return (
+     <div className={'services-collapse'} key={props.key}>
+       {Accordion.toggle(props.title)}
+       {
+         Accordion.panel(
+             <Service desc={props.desc} examples={props.examples}
+                      icon={props.icon} links={props.links}/>,
+             'services-bg')
+       }
+     </div>
+ )
 };
 
 const Services = () => {
@@ -109,7 +54,9 @@ const Services = () => {
         <div id={'services'}>
           <div id="services-title">our services</div>
           <div id="services-list">
-            {ServicesCollapse()}
+            {services.map(service => (
+                ServicesCollapse(service)
+            ))}
           </div>
           <div id="home-tuition-info">{texts.homeTuitionInfo}</div>
         </div>
