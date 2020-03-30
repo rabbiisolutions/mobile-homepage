@@ -17,6 +17,8 @@ const Footer = () => {
           <div className="footer-title">{texts.links}</div>
           <div className={'col links'}>
             <a href={'https://forms.gle/eNN6kvmHMXpM2mi68'}>{texts.dot}&nbsp;Class Attendance</a>
+            <a href={'/CORONAVIRUS.pdf'}>
+              {texts.dot}Corona Virus Demystified</a>
           </div>
           <div className="footer-title">{texts.talkToUs}</div>
           <div id="contacts" className={'col'}>
